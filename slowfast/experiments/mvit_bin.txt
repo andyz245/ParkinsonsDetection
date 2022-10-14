@@ -1,0 +1,763 @@
+[06/19 19:09:07][INFO] logging.py:   99: json_stats: {"RAM": "61.85/311.50G", "_type": "train_epoch", "dt": 0.026, "dt_data": 0.026, "dt_net": 1.457, "epoch": "196/196", "eta": "0:00:00", "gpu_mem": "6.78G", "loss": 1.234, "lr": 0.000, "top1_err": 3.125, "top5_err": 0.000}
+[06/19 19:09:07][INFO] train_net.py:  733: Epoch 195 takes 23.45s. Epochs from 0 to 195 take 23.91s in average and 23.96s in median.
+[06/19 19:09:07][INFO] train_net.py:  739: For epoch 195, each iteraction takes 7.82s in average. From epoch 0 to 195, each iteraction takes 7.97s in average.
+/home/andyz3/PD/FSPD/slowfast/slowfast/datasets/decoder.py:262: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/miniconda3/envs/tempo/conda-bld/pytorch-base_1632157329565/work/torch/csrc/utils/tensor_numpy.cpp:143.)
+  video_tensor = torch.from_numpy(np.frombuffer(video_handle, dtype=np.uint8))
+/home/andyz3/PD/FSPD/slowfast/slowfast/datasets/decoder.py:262: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/miniconda3/envs/tempo/conda-bld/pytorch-base_1632157329565/work/torch/csrc/utils/tensor_numpy.cpp:143.)
+  video_tensor = torch.from_numpy(np.frombuffer(video_handle, dtype=np.uint8))
+[06/19 19:09:17][INFO] logging.py:   99: json_stats: {"RAM": "61.84/311.50G", "_type": "val_epoch", "epoch": "196/196", "gpu_mem": "6.78G", "min_top1_err": 39.286, "min_top5_err": 0.000, "time_diff": 0.022, "top1_err": 42.857, "top5_err": 0.000}
+[06/19 19:09:17][INFO] train_net.py:  800: training done: Top1 Acc: 60.71 Top5 Acc: 100.00 MEM: 6.78
+[06/19 19:09:17][INFO] test_net.py:  183: Test with config:
+[06/19 19:09:17][INFO] test_net.py:  184: AUG:
+  AA_TYPE: rand-m7-n4-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  ENABLE: True
+  INTERPOLATION: bicubic
+  NUM_SAMPLE: 2
+  RE_COUNT: 1
+  RE_MODE: pixel
+  RE_PROB: 0.25
+  RE_SPLIT: False
+AVA:
+  ANNOTATION_DIR: /mnt/vol/gfsai-flash3-east/ai-group/users/haoqifan/ava/frame_list/
+  BGR: False
+  DETECTION_SCORE_THRESH: 0.9
+  EXCLUSION_FILE: ava_val_excluded_timestamps_v2.2.csv
+  FRAME_DIR: /mnt/fair-flash3-east/ava_trainval_frames.img/
+  FRAME_LIST_DIR: /mnt/vol/gfsai-flash3-east/ai-group/users/haoqifan/ava/frame_list/
+  FULL_TEST_ON_VAL: False
+  GROUNDTRUTH_FILE: ava_val_v2.2.csv
+  IMG_PROC_BACKEND: cv2
+  LABEL_MAP_FILE: ava_action_list_v2.2_for_activitynet_2019.pbtxt
+  TEST_FORCE_FLIP: False
+  TEST_LISTS: ['val.csv']
+  TEST_PREDICT_BOX_LISTS: ['ava_val_predicted_boxes.csv']
+  TRAIN_GT_BOX_LISTS: ['ava_train_v2.2.csv']
+  TRAIN_LISTS: ['train.csv']
+  TRAIN_PCA_JITTER_ONLY: True
+  TRAIN_PREDICT_BOX_LISTS: []
+  TRAIN_USE_COLOR_AUGMENTATION: False
+BENCHMARK:
+  LOG_PERIOD: 100
+  NUM_EPOCHS: 5
+  SHUFFLE: True
+BN:
+  GLOBAL_SYNC: False
+  NORM_TYPE: batchnorm
+  NUM_BATCHES_PRECISE: 200
+  NUM_SPLITS: 1
+  NUM_SYNC_DEVICES: 1
+  USE_PRECISE_STATS: False
+  WEIGHT_DECAY: 0.0
+CONTRASTIVE:
+  BN_MLP: False
+  BN_SYNC_MLP: False
+  DELTA_CLIPS_MAX: inf
+  DELTA_CLIPS_MIN: -inf
+  DIM: 128
+  INTERP_MEMORY: False
+  KNN_ON: True
+  LENGTH: 239975
+  LOCAL_SHUFFLE_BN: True
+  MEM_TYPE: 1d
+  MLP_DIM: 2048
+  MOCO_MULTI_VIEW_QUEUE: False
+  MOMENTUM: 0.5
+  MOMENTUM_ANNEALING: False
+  NUM_CLASSES_DOWNSTREAM: 400
+  NUM_MLP_LAYERS: 1
+  PREDICTOR_DEPTHS: []
+  QUEUE_LEN: 65536
+  SEQUENTIAL: False
+  SIMCLR_DIST_ON: True
+  SWAV_QEUE_LEN: 0
+  T: 0.07
+  TYPE: mem
+DATA:
+  COLOR_RND_GRAYSCALE: 0.0
+  DECODING_BACKEND: torchvision
+  ENSEMBLE_METHOD: sum
+  INPUT_CHANNEL_NUM: [3]
+  INV_UNIFORM_SAMPLE: False
+  LOADER_CHUNK_OVERALL_SIZE: 0
+  LOADER_CHUNK_SIZE: 0
+  MEAN: [0.45, 0.45, 0.45]
+  MULTI_LABEL: False
+  NUM_FRAMES: 16
+  PATH_LABEL_SEPARATOR:  
+  PATH_PREFIX: 
+  PATH_TO_DATA_DIR: data
+  PATH_TO_PRELOAD_IMDB: 
+  RANDOM_FLIP: True
+  REVERSE_INPUT_CHANNEL: False
+  SAMPLING_RATE: 4
+  SKIP_ROWS: 0
+  SSL_BLUR_SIGMA_MAX: [0.0, 2.0]
+  SSL_BLUR_SIGMA_MIN: [0.0, 0.1]
+  SSL_COLOR_BRI_CON_SAT: [0.4, 0.4, 0.4]
+  SSL_COLOR_HUE: 0.1
+  SSL_COLOR_JITTER: False
+  SSL_MOCOV2_AUG: False
+  STD: [0.225, 0.225, 0.225]
+  TARGET_FPS: 30
+  TEST_CROP_SIZE: 224
+  TIME_DIFF_PROB: 0.0
+  TRAIN_CROP_NUM_SPATIAL: 1
+  TRAIN_CROP_NUM_TEMPORAL: 1
+  TRAIN_CROP_SIZE: 224
+  TRAIN_JITTER_ASPECT_RELATIVE: [0.75, 1.3333]
+  TRAIN_JITTER_FPS: 0.0
+  TRAIN_JITTER_MOTION_SHIFT: False
+  TRAIN_JITTER_SCALES: [256, 320]
+  TRAIN_JITTER_SCALES_RELATIVE: [0.08, 1.0]
+  TRAIN_PCA_EIGVAL: [0.225, 0.224, 0.229]
+  TRAIN_PCA_EIGVEC: [[-0.5675, 0.7192, 0.4009], [-0.5808, -0.0045, -0.814], [-0.5836, -0.6948, 0.4203]]
+  USE_OFFSET_SAMPLING: True
+DATA_LOADER:
+  ENABLE_MULTI_THREAD_DECODE: False
+  NUM_WORKERS: 8
+  PIN_MEMORY: True
+DEMO:
+  BUFFER_SIZE: 0
+  CLIP_VIS_SIZE: 10
+  COMMON_CLASS_NAMES: ['watch (a person)', 'talk to (e.g., self, a person, a group)', 'listen to (a person)', 'touch (an object)', 'carry/hold (an object)', 'walk', 'sit', 'lie/sleep', 'bend/bow (at the waist)']
+  COMMON_CLASS_THRES: 0.7
+  DETECTRON2_CFG: COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml
+  DETECTRON2_THRESH: 0.9
+  DETECTRON2_WEIGHTS: detectron2://COCO-Detection/faster_rcnn_R_50_FPN_3x/137849458/model_final_280758.pkl
+  DISPLAY_HEIGHT: 0
+  DISPLAY_WIDTH: 0
+  ENABLE: False
+  FPS: 30
+  GT_BOXES: 
+  INPUT_FORMAT: BGR
+  INPUT_VIDEO: 
+  LABEL_FILE_PATH: 
+  NUM_CLIPS_SKIP: 0
+  NUM_VIS_INSTANCES: 2
+  OUTPUT_FILE: 
+  OUTPUT_FPS: -1
+  PREDS_BOXES: 
+  SLOWMO: 1
+  STARTING_SECOND: 900
+  THREAD_ENABLE: False
+  UNCOMMON_CLASS_THRES: 0.3
+  VIS_MODE: thres
+  WEBCAM: -1
+DETECTION:
+  ALIGNED: True
+  ENABLE: False
+  ROI_XFORM_RESOLUTION: 7
+  SPATIAL_SCALE_FACTOR: 16
+DIST_BACKEND: nccl
+LOG_MODEL_INFO: True
+LOG_PERIOD: 10
+MIXUP:
+  ALPHA: 0.8
+  CUTMIX_ALPHA: 1.0
+  ENABLE: True
+  LABEL_SMOOTH_VALUE: 0.1
+  PROB: 1.0
+  SWITCH_PROB: 0.5
+MODEL:
+  ACT_CHECKPOINT: False
+  ARCH: mvit
+  DETACH_FINAL_FC: False
+  DROPCONNECT_RATE: 0.0
+  DROPOUT_RATE: 0.5
+  FC_INIT_STD: 0.01
+  FP16_ALLREDUCE: False
+  FROZEN_BN: False
+  HEAD_ACT: softmax
+  LOSS_FUNC: soft_cross_entropy
+  MODEL_NAME: MViT
+  MULTI_PATHWAY_ARCH: ['slowfast']
+  NUM_CLASSES: 10
+  SINGLE_PATHWAY_ARCH: ['2d', 'c2d', 'i3d', 'slow', 'x3d', 'mvit']
+MULTIGRID:
+  BN_BASE_SIZE: 8
+  DEFAULT_B: 0
+  DEFAULT_S: 0
+  DEFAULT_T: 0
+  EPOCH_FACTOR: 1.5
+  EVAL_FREQ: 3
+  LONG_CYCLE: False
+  LONG_CYCLE_FACTORS: [(0.25, 0.7071067811865476), (0.5, 0.7071067811865476), (0.5, 1), (1, 1)]
+  LONG_CYCLE_SAMPLING_RATE: 0
+  SHORT_CYCLE: False
+  SHORT_CYCLE_FACTORS: [0.5, 0.7071067811865476]
+MVIT:
+  CLS_EMBED_ON: True
+  DEPTH: 16
+  DIM_MUL: [[1, 2.0], [3, 2.0], [14, 2.0]]
+  DROPOUT_RATE: 0.0
+  DROPPATH_RATE: 0.2
+  EMBED_DIM: 96
+  HEAD_MUL: [[1, 2.0], [3, 2.0], [14, 2.0]]
+  MLP_RATIO: 4.0
+  MODE: conv
+  NORM: layernorm
+  NORM_STEM: False
+  NUM_HEADS: 1
+  PATCH_2D: False
+  PATCH_KERNEL: [3, 7, 7]
+  PATCH_PADDING: [1, 3, 3]
+  PATCH_STRIDE: [2, 4, 4]
+  POOL_FIRST: False
+  POOL_KVQ_KERNEL: [3, 3, 3]
+  POOL_KV_STRIDE: [[0, 1, 8, 8], [1, 1, 4, 4], [2, 1, 4, 4], [3, 1, 2, 2], [4, 1, 2, 2], [5, 1, 2, 2], [6, 1, 2, 2], [7, 1, 2, 2], [8, 1, 2, 2], [9, 1, 2, 2], [10, 1, 2, 2], [11, 1, 2, 2], [12, 1, 2, 2], [13, 1, 2, 2], [14, 1, 1, 1], [15, 1, 1, 1]]
+  POOL_KV_STRIDE_ADAPTIVE: [1, 8, 8]
+  POOL_Q_STRIDE: [[1, 1, 2, 2], [3, 1, 2, 2], [14, 1, 2, 2]]
+  QKV_BIAS: True
+  SEP_POS_EMBED: True
+  ZERO_DECAY_POS_CLS: False
+NONLOCAL:
+  GROUP: [[1], [1], [1], [1]]
+  INSTANTIATION: dot_product
+  LOCATION: [[[]], [[]], [[]], [[]]]
+  POOL: [[[1, 2, 2], [1, 2, 2]], [[1, 2, 2], [1, 2, 2]], [[1, 2, 2], [1, 2, 2]], [[1, 2, 2], [1, 2, 2]]]
+NUM_GPUS: 1
+NUM_SHARDS: 1
+OUTPUT_DIR: .
+RESNET:
+  DEPTH: 50
+  INPLACE_RELU: True
+  NUM_BLOCK_TEMP_KERNEL: [[3], [4], [6], [3]]
+  NUM_GROUPS: 1
+  SPATIAL_DILATIONS: [[1], [1], [1], [1]]
+  SPATIAL_STRIDES: [[1], [2], [2], [2]]
+  STRIDE_1X1: False
+  TRANS_FUNC: bottleneck_transform
+  WIDTH_PER_GROUP: 64
+  ZERO_INIT_FINAL_BN: False
+  ZERO_INIT_FINAL_CONV: False
+RNG_SEED: 0
+SHARD_ID: 0
+SLOWFAST:
+  ALPHA: 8
+  BETA_INV: 8
+  FUSION_CONV_CHANNEL_RATIO: 2
+  FUSION_KERNEL_SZ: 5
+SOLVER:
+  BASE_LR: 0.0001
+  BASE_LR_SCALE_NUM_SHARDS: True
+  CLIP_GRAD_L2NORM: 1.0
+  CLIP_GRAD_VAL: None
+  COSINE_AFTER_WARMUP: True
+  COSINE_END_LR: 1e-06
+  DAMPENING: 0.0
+  GAMMA: 0.1
+  LARS_ON: False
+  LRS: []
+  LR_POLICY: cosine
+  MAX_EPOCH: 196
+  MOMENTUM: 0.9
+  NESTEROV: True
+  OPTIMIZING_METHOD: adamw
+  STEPS: []
+  STEP_SIZE: 1
+  WARMUP_EPOCHS: 30.0
+  WARMUP_FACTOR: 0.1
+  WARMUP_START_LR: 1e-06
+  WEIGHT_DECAY: 0.05
+  ZERO_WD_1D_PARAM: True
+TASK: 
+TENSORBOARD:
+  CATEGORIES_PATH: 
+  CLASS_NAMES_PATH: 
+  CONFUSION_MATRIX:
+    ENABLE: False
+    FIGSIZE: [8, 8]
+    SUBSET_PATH: 
+  ENABLE: False
+  HISTOGRAM:
+    ENABLE: False
+    FIGSIZE: [8, 8]
+    SUBSET_PATH: 
+    TOPK: 10
+  LOG_DIR: 
+  MODEL_VIS:
+    ACTIVATIONS: False
+    COLORMAP: Pastel2
+    ENABLE: False
+    GRAD_CAM:
+      COLORMAP: viridis
+      ENABLE: True
+      LAYER_LIST: []
+      USE_TRUE_LABEL: False
+    INPUT_VIDEO: False
+    LAYER_LIST: []
+    MODEL_WEIGHTS: False
+    TOPK_PREDS: 1
+  PREDICTIONS_PATH: 
+  WRONG_PRED_VIS:
+    ENABLE: False
+    SUBSET_PATH: 
+    TAG: Incorrectly classified videos.
+TEST:
+  BATCH_SIZE: 16
+  CHECKPOINT_FILE_PATH: 
+  CHECKPOINT_TYPE: pytorch
+  DATASET: kinetics
+  ENABLE: True
+  NUM_ENSEMBLE_VIEWS: 10
+  NUM_SPATIAL_CROPS: 1
+  SAVE_RESULTS_PATH: 
+TRAIN:
+  AUTO_RESUME: True
+  BATCH_SIZE: 16
+  CHECKPOINT_CLEAR_NAME_PATTERN: ()
+  CHECKPOINT_EPOCH_RESET: False
+  CHECKPOINT_FILE_PATH: configs/PD/I3D_8x8_R50.pkl
+  CHECKPOINT_INFLATE: False
+  CHECKPOINT_PERIOD: 10
+  CHECKPOINT_TYPE: caffe2
+  DATASET: kinetics
+  ENABLE: True
+  EVAL_PERIOD: 10
+  MIXED_PRECISION: False
+X3D:
+  BN_LIN5: False
+  BOTTLENECK_FACTOR: 1.0
+  CHANNELWISE_3x3x3: True
+  DEPTH_FACTOR: 1.0
+  DIM_C1: 12
+  DIM_C5: 2048
+  SCALE_RES2: False
+  WIDTH_FACTOR: 1.0
+[06/19 19:09:20][INFO] misc.py:  183: Model:
+MViT(
+  (patch_embed): PatchEmbed(
+    (proj): Conv3d(3, 96, kernel_size=[3, 7, 7], stride=[2, 4, 4], padding=[1, 3, 3])
+  )
+  (blocks): ModuleList(
+    (0): MultiScaleBlock(
+      (norm1): LayerNorm((96,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=96, out_features=96, bias=True)
+        (k): Linear(in_features=96, out_features=96, bias=True)
+        (v): Linear(in_features=96, out_features=96, bias=True)
+        (proj): Linear(in_features=96, out_features=96, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 8, 8], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 8, 8], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): Identity()
+      (norm2): LayerNorm((96,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=96, out_features=384, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=384, out_features=192, bias=True)
+      )
+      (proj): Linear(in_features=96, out_features=192, bias=True)
+    )
+    (1): MultiScaleBlock(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=192, out_features=192, bias=True)
+        (k): Linear(in_features=192, out_features=192, bias=True)
+        (v): Linear(in_features=192, out_features=192, bias=True)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (pool_q): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_q): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 4, 4], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 4, 4], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=768, out_features=192, bias=True)
+      )
+      (pool_skip): MaxPool3d(kernel_size=[1, 3, 3], stride=[1, 2, 2], padding=[0, 1, 1], dilation=1, ceil_mode=False)
+    )
+    (2): MultiScaleBlock(
+      (norm1): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=192, out_features=192, bias=True)
+        (k): Linear(in_features=192, out_features=192, bias=True)
+        (v): Linear(in_features=192, out_features=192, bias=True)
+        (proj): Linear(in_features=192, out_features=192, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 4, 4], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 4, 4], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((192,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=768, out_features=384, bias=True)
+      )
+      (proj): Linear(in_features=192, out_features=384, bias=True)
+    )
+    (3): MultiScaleBlock(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=384, out_features=384, bias=True)
+        (k): Linear(in_features=384, out_features=384, bias=True)
+        (v): Linear(in_features=384, out_features=384, bias=True)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (pool_q): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_q): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+      )
+      (pool_skip): MaxPool3d(kernel_size=[1, 3, 3], stride=[1, 2, 2], padding=[0, 1, 1], dilation=1, ceil_mode=False)
+    )
+    (4): MultiScaleBlock(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=384, out_features=384, bias=True)
+        (k): Linear(in_features=384, out_features=384, bias=True)
+        (v): Linear(in_features=384, out_features=384, bias=True)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+      )
+    )
+    (5): MultiScaleBlock(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=384, out_features=384, bias=True)
+        (k): Linear(in_features=384, out_features=384, bias=True)
+        (v): Linear(in_features=384, out_features=384, bias=True)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+      )
+    )
+    (6): MultiScaleBlock(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=384, out_features=384, bias=True)
+        (k): Linear(in_features=384, out_features=384, bias=True)
+        (v): Linear(in_features=384, out_features=384, bias=True)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+      )
+    )
+    (7): MultiScaleBlock(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=384, out_features=384, bias=True)
+        (k): Linear(in_features=384, out_features=384, bias=True)
+        (v): Linear(in_features=384, out_features=384, bias=True)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+      )
+    )
+    (8): MultiScaleBlock(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=384, out_features=384, bias=True)
+        (k): Linear(in_features=384, out_features=384, bias=True)
+        (v): Linear(in_features=384, out_features=384, bias=True)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+      )
+    )
+    (9): MultiScaleBlock(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=384, out_features=384, bias=True)
+        (k): Linear(in_features=384, out_features=384, bias=True)
+        (v): Linear(in_features=384, out_features=384, bias=True)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+      )
+    )
+    (10): MultiScaleBlock(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=384, out_features=384, bias=True)
+        (k): Linear(in_features=384, out_features=384, bias=True)
+        (v): Linear(in_features=384, out_features=384, bias=True)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+      )
+    )
+    (11): MultiScaleBlock(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=384, out_features=384, bias=True)
+        (k): Linear(in_features=384, out_features=384, bias=True)
+        (v): Linear(in_features=384, out_features=384, bias=True)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+      )
+    )
+    (12): MultiScaleBlock(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=384, out_features=384, bias=True)
+        (k): Linear(in_features=384, out_features=384, bias=True)
+        (v): Linear(in_features=384, out_features=384, bias=True)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=1536, out_features=384, bias=True)
+      )
+    )
+    (13): MultiScaleBlock(
+      (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=384, out_features=384, bias=True)
+        (k): Linear(in_features=384, out_features=384, bias=True)
+        (v): Linear(in_features=384, out_features=384, bias=True)
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=1536, out_features=768, bias=True)
+      )
+      (proj): Linear(in_features=384, out_features=768, bias=True)
+    )
+    (14): MultiScaleBlock(
+      (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=768, out_features=768, bias=True)
+        (k): Linear(in_features=768, out_features=768, bias=True)
+        (v): Linear(in_features=768, out_features=768, bias=True)
+        (proj): Linear(in_features=768, out_features=768, bias=True)
+        (pool_q): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 2, 2], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_q): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 1, 1], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 1, 1], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=768, out_features=3072, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=3072, out_features=768, bias=True)
+      )
+      (pool_skip): MaxPool3d(kernel_size=[1, 3, 3], stride=[1, 2, 2], padding=[0, 1, 1], dilation=1, ceil_mode=False)
+    )
+    (15): MultiScaleBlock(
+      (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+      (attn): MultiScaleAttention(
+        (q): Linear(in_features=768, out_features=768, bias=True)
+        (k): Linear(in_features=768, out_features=768, bias=True)
+        (v): Linear(in_features=768, out_features=768, bias=True)
+        (proj): Linear(in_features=768, out_features=768, bias=True)
+        (pool_k): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 1, 1], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_k): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+        (pool_v): Conv3d(96, 96, kernel_size=[3, 3, 3], stride=[1, 1, 1], padding=[1, 1, 1], groups=96, bias=False)
+        (norm_v): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+      )
+      (drop_path): DropPath()
+      (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+      (mlp): Mlp(
+        (fc1): Linear(in_features=768, out_features=3072, bias=True)
+        (act): GELU()
+        (fc2): Linear(in_features=3072, out_features=768, bias=True)
+      )
+    )
+  )
+  (norm): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+  (head): TransformerBasicHead(
+    (dropout): Dropout(p=0.5, inplace=False)
+    (projection): Linear(in_features=768, out_features=10, bias=True)
+    (act): Softmax(dim=1)
+  )
+)
+[06/19 19:09:20][INFO] misc.py:  184: Params: 36,310,762
+[06/19 19:09:20][INFO] misc.py:  185: Mem: 6.778197288513184 MB
+[06/19 19:09:20][WARNING] jit_analysis.py:  499: Unsupported operator aten::repeat encountered 1 time(s)
+[06/19 19:09:20][WARNING] jit_analysis.py:  499: Unsupported operator aten::repeat_interleave encountered 1 time(s)
+[06/19 19:09:20][WARNING] jit_analysis.py:  499: Unsupported operator aten::add encountered 34 time(s)
+[06/19 19:09:20][WARNING] jit_analysis.py:  499: Unsupported operator aten::add_ encountered 99 time(s)
+[06/19 19:09:20][WARNING] jit_analysis.py:  499: Unsupported operator aten::mul encountered 130 time(s)
+[06/19 19:09:20][WARNING] jit_analysis.py:  499: Unsupported operator aten::softmax encountered 17 time(s)
+[06/19 19:09:20][WARNING] jit_analysis.py:  499: Unsupported operator aten::gelu encountered 16 time(s)
+[06/19 19:09:20][WARNING] jit_analysis.py:  499: Unsupported operator aten::max_pool3d encountered 3 time(s)
+[06/19 19:09:20][WARNING] jit_analysis.py:  511: The following submodules of the model were never called during the trace of the graph. They may be unused, or they were accessed by direct calls to .forward() or via other python methods. In the latter case they will have zeros for statistics, though their statistics will still contribute to their parent calling module.
+blocks.1.drop_path, blocks.10.drop_path, blocks.11.drop_path, blocks.12.drop_path, blocks.13.drop_path, blocks.14.drop_path, blocks.15.drop_path, blocks.2.drop_path, blocks.3.drop_path, blocks.4.drop_path, blocks.5.drop_path, blocks.6.drop_path, blocks.7.drop_path, blocks.8.drop_path, blocks.9.drop_path
+[06/19 19:09:20][INFO] misc.py:  186: Flops: 70.803585408 G
+[06/19 19:09:21][WARNING] jit_analysis.py:  499: Unsupported operator aten::repeat encountered 1 time(s)
+[06/19 19:09:21][WARNING] jit_analysis.py:  499: Unsupported operator aten::repeat_interleave encountered 1 time(s)
+[06/19 19:09:21][WARNING] jit_analysis.py:  499: Unsupported operator aten::add encountered 34 time(s)
+[06/19 19:09:21][WARNING] jit_analysis.py:  499: Unsupported operator aten::layer_norm encountered 68 time(s)
+[06/19 19:09:21][WARNING] jit_analysis.py:  499: Unsupported operator aten::add_ encountered 99 time(s)
+[06/19 19:09:21][WARNING] jit_analysis.py:  499: Unsupported operator aten::mul encountered 130 time(s)
+[06/19 19:09:21][WARNING] jit_analysis.py:  499: Unsupported operator aten::softmax encountered 17 time(s)
+[06/19 19:09:21][WARNING] jit_analysis.py:  499: Unsupported operator aten::gelu encountered 16 time(s)
+[06/19 19:09:21][WARNING] jit_analysis.py:  499: Unsupported operator aten::max_pool3d encountered 3 time(s)
+[06/19 19:09:21][WARNING] jit_analysis.py:  511: The following submodules of the model were never called during the trace of the graph. They may be unused, or they were accessed by direct calls to .forward() or via other python methods. In the latter case they will have zeros for statistics, though their statistics will still contribute to their parent calling module.
+blocks.1.drop_path, blocks.10.drop_path, blocks.11.drop_path, blocks.12.drop_path, blocks.13.drop_path, blocks.14.drop_path, blocks.15.drop_path, blocks.2.drop_path, blocks.3.drop_path, blocks.4.drop_path, blocks.5.drop_path, blocks.6.drop_path, blocks.7.drop_path, blocks.8.drop_path, blocks.9.drop_path
+[06/19 19:09:21][INFO] misc.py:  191: Activations: 239.822275 M
+[06/19 19:09:21][INFO] misc.py:  196: nvidia-smi
+Sun Jun 19 19:09:21 2022       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 510.47.03    Driver Version: 510.47.03    CUDA Version: 11.6     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000004:05:00.0 Off |                  Off |
+| N/A   49C    P0    63W / 300W |  12632MiB / 16384MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A   2345081      C   python                          10579MiB |
++-----------------------------------------------------------------------------+
+[06/19 19:09:21][INFO] checkpoint.py:  220: Loading network weights from ./checkpoints/checkpoint_epoch_00196.pyth.
+[06/19 19:09:22][INFO] kinetics.py:   88: Constructing Kinetics test...
+[06/19 19:09:22][INFO] kinetics.py:  152: Constructing kinetics dataloader (size: 300 skip_rows 0) from data/test.csv 
+/opt/miniconda3/envs/opence-v1.3.1/lib/python3.8/site-packages/torch/utils/data/dataloader.py:474: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 4, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+[06/19 19:09:22][INFO] test_net.py:  210: Testing model for 19 iterations
+/home/andyz3/PD/FSPD/slowfast/slowfast/datasets/decoder.py:262: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/miniconda3/envs/tempo/conda-bld/pytorch-base_1632157329565/work/torch/csrc/utils/tensor_numpy.cpp:143.)
+  video_tensor = torch.from_numpy(np.frombuffer(video_handle, dtype=np.uint8))
+/home/andyz3/PD/FSPD/slowfast/slowfast/datasets/decoder.py:262: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/miniconda3/envs/tempo/conda-bld/pytorch-base_1632157329565/work/torch/csrc/utils/tensor_numpy.cpp:143.)
+  video_tensor = torch.from_numpy(np.frombuffer(video_handle, dtype=np.uint8))
+/home/andyz3/PD/FSPD/slowfast/slowfast/datasets/decoder.py:262: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/miniconda3/envs/tempo/conda-bld/pytorch-base_1632157329565/work/torch/csrc/utils/tensor_numpy.cpp:143.)
+  video_tensor = torch.from_numpy(np.frombuffer(video_handle, dtype=np.uint8))
+/home/andyz3/PD/FSPD/slowfast/slowfast/datasets/decoder.py:262: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/miniconda3/envs/tempo/conda-bld/pytorch-base_1632157329565/work/torch/csrc/utils/tensor_numpy.cpp:143.)
+  video_tensor = torch.from_numpy(np.frombuffer(video_handle, dtype=np.uint8))
+/home/andyz3/PD/FSPD/slowfast/slowfast/datasets/decoder.py:262: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/miniconda3/envs/tempo/conda-bld/pytorch-base_1632157329565/work/torch/csrc/utils/tensor_numpy.cpp:143.)
+  video_tensor = torch.from_numpy(np.frombuffer(video_handle, dtype=np.uint8))
+/home/andyz3/PD/FSPD/slowfast/slowfast/datasets/decoder.py:262: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/miniconda3/envs/tempo/conda-bld/pytorch-base_1632157329565/work/torch/csrc/utils/tensor_numpy.cpp:143.)
+  video_tensor = torch.from_numpy(np.frombuffer(video_handle, dtype=np.uint8))
+/home/andyz3/PD/FSPD/slowfast/slowfast/datasets/decoder.py:262: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/miniconda3/envs/tempo/conda-bld/pytorch-base_1632157329565/work/torch/csrc/utils/tensor_numpy.cpp:143.)
+  video_tensor = torch.from_numpy(np.frombuffer(video_handle, dtype=np.uint8))
+/home/andyz3/PD/FSPD/slowfast/slowfast/datasets/decoder.py:262: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/miniconda3/envs/tempo/conda-bld/pytorch-base_1632157329565/work/torch/csrc/utils/tensor_numpy.cpp:143.)
+  video_tensor = torch.from_numpy(np.frombuffer(video_handle, dtype=np.uint8))
+[06/19 19:09:38][INFO] logging.py:   99: json_stats: {"cur_iter": "1", "eta": "0:05:12", "split": "test_iter", "time_diff": 16.447}
+[06/19 19:09:41][INFO] logging.py:   99: json_stats: {"cur_iter": "2", "eta": "0:00:58", "split": "test_iter", "time_diff": 3.237}
+[06/19 19:09:42][INFO] logging.py:   99: json_stats: {"cur_iter": "3", "eta": "0:00:10", "split": "test_iter", "time_diff": 0.617}
+[06/19 19:09:42][INFO] logging.py:   99: json_stats: {"cur_iter": "4", "eta": "0:00:09", "split": "test_iter", "time_diff": 0.577}
+[06/19 19:09:43][INFO] logging.py:   99: json_stats: {"cur_iter": "5", "eta": "0:00:08", "split": "test_iter", "time_diff": 0.568}
+[06/19 19:09:44][INFO] logging.py:   99: json_stats: {"cur_iter": "6", "eta": "0:00:08", "split": "test_iter", "time_diff": 0.627}
+[06/19 19:09:44][INFO] logging.py:   99: json_stats: {"cur_iter": "7", "eta": "0:00:07", "split": "test_iter", "time_diff": 0.577}
+[06/19 19:09:45][INFO] logging.py:   99: json_stats: {"cur_iter": "8", "eta": "0:00:07", "split": "test_iter", "time_diff": 0.597}
+[06/19 19:09:58][INFO] logging.py:   99: json_stats: {"cur_iter": "9", "eta": "0:02:23", "split": "test_iter", "time_diff": 13.061}
+[06/19 19:09:59][INFO] logging.py:   99: json_stats: {"cur_iter": "10", "eta": "0:00:06", "split": "test_iter", "time_diff": 0.630}
+[06/19 19:09:59][INFO] logging.py:   99: json_stats: {"cur_iter": "11", "eta": "0:00:05", "split": "test_iter", "time_diff": 0.562}
+[06/19 19:10:01][INFO] logging.py:   99: json_stats: {"cur_iter": "12", "eta": "0:00:17", "split": "test_iter", "time_diff": 2.185}
+[06/19 19:10:02][INFO] logging.py:   99: json_stats: {"cur_iter": "13", "eta": "0:00:03", "split": "test_iter", "time_diff": 0.565}
+[06/19 19:10:03][INFO] logging.py:   99: json_stats: {"cur_iter": "14", "eta": "0:00:03", "split": "test_iter", "time_diff": 0.563}
+[06/19 19:10:03][INFO] logging.py:   99: json_stats: {"cur_iter": "15", "eta": "0:00:02", "split": "test_iter", "time_diff": 0.562}
+[06/19 19:10:04][INFO] logging.py:   99: json_stats: {"cur_iter": "16", "eta": "0:00:02", "split": "test_iter", "time_diff": 0.563}
+[06/19 19:10:06][INFO] logging.py:   99: json_stats: {"cur_iter": "17", "eta": "0:00:05", "split": "test_iter", "time_diff": 1.891}
+[06/19 19:10:06][INFO] logging.py:   99: json_stats: {"cur_iter": "18", "eta": "0:00:01", "split": "test_iter", "time_diff": 0.563}
+[06/19 19:10:07][INFO] logging.py:   99: json_stats: {"cur_iter": "19", "eta": "0:00:00", "split": "test_iter", "time_diff": 0.427}
+[06/19 19:10:07][INFO] logging.py:   99: json_stats: {"split": "test_final", "top1_acc": "56.67", "top5_acc": "100.00"}
+[06/19 19:10:07][INFO] test_net.py:  259: testing done: _ak56.67 Top1 Acc: 56.67 Top5 Acc: 100.00 MEM: 6.78 dataset: k10
+(opence-v1.3.1) bash-4.4$ 

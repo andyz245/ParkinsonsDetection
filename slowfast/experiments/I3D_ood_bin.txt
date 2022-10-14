@@ -1,0 +1,2387 @@
+0: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+0: Train Top1 Acc: 25.0, Train Top5 Acc: 100.0
+0: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+0: Train Top1 Acc: 25.0, Train Top5 Acc: 100.0
+0: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+0: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+0: Train Top1 Acc: 0.0, Train Top5 Acc: 100.0
+0: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+Predictions: tensor([[0.1670, 0.8330],
+        [0.1072, 0.8928],
+        [0.1962, 0.8038],
+        [0.1688, 0.8312],
+        [0.6076, 0.3924],
+        [0.7946, 0.2054],
+        [0.6471, 0.3529],
+        [0.1585, 0.8415]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[0.3014, 0.6986],
+        [0.3997, 0.6003],
+        [0.2119, 0.7881],
+        [0.1271, 0.8729],
+        [0.2963, 0.7037],
+        [0.4342, 0.5658],
+        [0.5501, 0.4499],
+        [0.3977, 0.6023]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[0.2704, 0.7296],
+        [0.2304, 0.7696],
+        [0.5254, 0.4746],
+        [0.4740, 0.5260],
+        [0.2685, 0.7315]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+1: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+1: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+1: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+1: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+1: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+1: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+1: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+1: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+2: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+2: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+2: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+2: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+2: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+2: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+2: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+2: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+3: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+3: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+3: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+3: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+3: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+3: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+3: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+3: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+4: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+4: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+4: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+4: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+4: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+4: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+4: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+4: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+5: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+5: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+5: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+5: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+5: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+5: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+5: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+5: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+6: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+6: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+6: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+6: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+6: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+6: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+6: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+6: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+7: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+7: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+7: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+7: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+7: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+7: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+7: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+7: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+8: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+8: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+8: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+8: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+8: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+8: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+8: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+8: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+9: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+9: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+9: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+9: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+9: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+9: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+9: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+9: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+10: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+10: Train Top1 Acc: 12.5, Train Top5 Acc: 100.0
+10: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+10: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+10: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+10: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+10: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+10: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+Predictions: tensor([[4.3551e-08, 1.0000e+00],
+        [1.3744e-02, 9.8626e-01],
+        [4.7620e-05, 9.9995e-01],
+        [6.5863e-04, 9.9934e-01],
+        [1.0579e-01, 8.9421e-01],
+        [1.0000e+00, 9.2187e-07],
+        [8.8690e-01, 1.1310e-01],
+        [3.0513e-04, 9.9969e-01]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[3.7017e-03, 9.9630e-01],
+        [9.9995e-01, 5.4837e-05],
+        [1.1951e-04, 9.9988e-01],
+        [7.1848e-04, 9.9928e-01],
+        [2.3052e-02, 9.7695e-01],
+        [9.7991e-01, 2.0094e-02],
+        [3.9298e-05, 9.9996e-01],
+        [1.3257e-01, 8.6743e-01]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[9.1844e-01, 8.1558e-02],
+        [4.4923e-04, 9.9955e-01],
+        [1.0101e-02, 9.8990e-01],
+        [9.7079e-01, 2.9206e-02],
+        [9.3398e-01, 6.6019e-02]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+11: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+11: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+11: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+11: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+11: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+11: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+11: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+11: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+12: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+12: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+12: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+12: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+12: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+12: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+12: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+12: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+13: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+13: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+13: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+13: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+13: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+13: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+13: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+13: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+14: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+14: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+14: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+14: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+14: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+14: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+14: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+14: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+15: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+15: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+15: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+15: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+15: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+15: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+15: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+15: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+16: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+16: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+16: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+16: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+16: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+16: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+16: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+16: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+17: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+17: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+17: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+17: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+17: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+17: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+17: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+17: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+18: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+18: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+18: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+18: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+18: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+18: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+18: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+18: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+19: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+19: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+19: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+19: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+19: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+19: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+19: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+19: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+20: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+20: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+20: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+20: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+20: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+20: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+20: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+20: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+Predictions: tensor([[7.4084e-08, 1.0000e+00],
+        [9.2442e-01, 7.5579e-02],
+        [4.8404e-09, 1.0000e+00],
+        [9.9986e-01, 1.3585e-04],
+        [9.9997e-01, 3.3706e-05],
+        [1.0000e+00, 5.0007e-15],
+        [9.9965e-01, 3.4857e-04],
+        [3.7785e-01, 6.2215e-01]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[1.6542e-05, 9.9998e-01],
+        [9.3979e-01, 6.0214e-02],
+        [2.0223e-02, 9.7978e-01],
+        [9.5435e-01, 4.5653e-02],
+        [8.1345e-01, 1.8655e-01],
+        [9.9999e-01, 1.0668e-05],
+        [3.4288e-07, 1.0000e+00],
+        [9.9999e-01, 1.3178e-05]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[9.9683e-01, 3.1674e-03],
+        [4.5147e-04, 9.9955e-01],
+        [1.4433e-01, 8.5567e-01],
+        [1.0000e+00, 6.3621e-07],
+        [9.4183e-01, 5.8174e-02]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+21: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+21: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+21: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+21: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+21: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+21: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+21: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+21: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+22: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+22: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+22: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+22: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+22: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+22: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+22: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+22: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+23: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+23: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+23: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+23: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+23: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+23: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+23: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+23: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+24: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+24: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+24: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+24: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+24: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+24: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+24: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+24: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+25: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+25: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+25: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+25: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+25: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+25: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+25: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+25: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+26: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+26: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+26: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+26: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+26: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+26: Train Top1 Acc: 25.0, Train Top5 Acc: 100.0
+26: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+26: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+27: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+27: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+27: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+27: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+27: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+27: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+27: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+27: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+28: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+28: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+28: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+28: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+28: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+28: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+28: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+28: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+29: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+29: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+29: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+29: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+29: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+29: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+29: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+29: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+30: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+30: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+30: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+30: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+30: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+30: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+30: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+30: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+Predictions: tensor([[2.2861e-19, 1.0000e+00],
+        [2.8001e-10, 1.0000e+00],
+        [2.0309e-18, 1.0000e+00],
+        [7.8290e-04, 9.9922e-01],
+        [1.3070e-01, 8.6930e-01],
+        [1.0000e+00, 1.5060e-30],
+        [1.0000e+00, 1.7078e-15],
+        [4.0182e-02, 9.5982e-01]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[4.1572e-14, 1.0000e+00],
+        [1.0000e+00, 2.5753e-17],
+        [5.7942e-07, 1.0000e+00],
+        [5.5953e-03, 9.9440e-01],
+        [7.1542e-12, 1.0000e+00],
+        [1.0000e+00, 2.4145e-06],
+        [4.7524e-12, 1.0000e+00],
+        [1.2313e-01, 8.7687e-01]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[3.2981e-05, 9.9997e-01],
+        [1.4021e-12, 1.0000e+00],
+        [2.4300e-09, 1.0000e+00],
+        [1.0000e+00, 8.9997e-08],
+        [8.3846e-01, 1.6154e-01]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+31: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+31: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+31: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+31: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+31: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+31: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+31: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+31: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+32: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+32: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+32: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+32: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+32: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+32: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+32: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+32: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+33: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+33: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+33: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+33: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+33: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+33: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+33: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+33: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+34: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+34: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+34: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+34: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+34: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+34: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+34: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+34: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+35: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+35: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+35: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+35: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+35: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+35: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+35: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+35: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+36: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+36: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+36: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+36: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+36: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+36: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+36: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+36: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+37: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+37: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+37: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+37: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+37: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+37: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+37: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+37: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+38: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+38: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+38: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+38: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+38: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+38: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+38: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+38: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+39: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+39: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+39: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+39: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+39: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+39: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+39: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+39: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+40: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+40: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+40: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+40: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+40: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+40: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+40: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+40: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+Predictions: tensor([[2.4194e-31, 1.0000e+00],
+        [7.4101e-01, 2.5899e-01],
+        [3.0790e-21, 1.0000e+00],
+        [7.4590e-06, 9.9999e-01],
+        [9.9633e-01, 3.6738e-03],
+        [1.0000e+00, 4.3407e-23],
+        [1.0000e+00, 1.0133e-11],
+        [3.9686e-08, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[1.8423e-15, 1.0000e+00],
+        [1.0000e+00, 7.1642e-16],
+        [1.3477e-12, 1.0000e+00],
+        [1.2367e-09, 1.0000e+00],
+        [4.6265e-08, 1.0000e+00],
+        [1.0000e+00, 7.5796e-15],
+        [3.5034e-13, 1.0000e+00],
+        [1.0000e+00, 1.7099e-17]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[1.1418e-15, 1.0000e+00],
+        [7.1032e-17, 1.0000e+00],
+        [3.7212e-01, 6.2788e-01],
+        [8.7378e-01, 1.2622e-01],
+        [9.9999e-01, 1.0067e-05]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+41: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+41: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+41: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+41: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+41: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+41: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+41: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+41: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+42: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+42: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+42: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+42: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+42: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+42: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+42: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+42: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+43: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+43: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+43: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+43: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+43: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+43: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+43: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+43: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+44: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+44: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+44: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+44: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+44: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+44: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+44: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+44: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+45: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+45: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+45: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+45: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+45: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+45: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+45: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+45: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+46: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+46: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+46: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+46: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+46: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+46: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+46: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+46: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+47: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+47: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+47: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+47: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+47: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+47: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+47: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+47: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+48: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+48: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+48: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+48: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+48: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+48: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+48: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+48: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+49: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+49: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+49: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+49: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+49: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+49: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+49: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+49: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+50: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+50: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+50: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+50: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+50: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+50: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+50: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+50: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+Predictions: tensor([[3.0788e-27, 1.0000e+00],
+        [2.4491e-06, 1.0000e+00],
+        [2.3035e-23, 1.0000e+00],
+        [9.9999e-01, 5.0501e-06],
+        [1.0000e+00, 5.8988e-10],
+        [1.0000e+00, 0.0000e+00],
+        [1.0000e+00, 2.1048e-23],
+        [2.1042e-06, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[2.5208e-07, 1.0000e+00],
+        [1.0000e+00, 1.7704e-16],
+        [1.8613e-14, 1.0000e+00],
+        [3.1535e-05, 9.9997e-01],
+        [1.0000e+00, 4.1774e-07],
+        [1.0000e+00, 8.9047e-17],
+        [4.5811e-11, 1.0000e+00],
+        [1.0000e+00, 4.3565e-12]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[5.7482e-06, 9.9999e-01],
+        [7.5026e-24, 1.0000e+00],
+        [1.0000e+00, 3.1600e-14],
+        [9.9653e-01, 3.4714e-03],
+        [9.9994e-01, 6.4355e-05]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+51: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+51: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+51: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+51: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+51: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+51: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+51: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+51: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+52: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+52: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+52: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+52: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+52: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+52: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+52: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+52: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+53: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+53: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+53: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+53: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+53: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+53: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+53: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+53: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+54: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+54: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+54: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+54: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+54: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+54: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+54: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+54: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+55: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+55: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+55: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+55: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+55: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+55: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+55: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+55: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+56: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+56: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+56: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+56: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+56: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+56: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+56: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+56: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+57: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+57: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+57: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+57: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+57: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+57: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+57: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+57: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+58: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+58: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+58: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+58: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+58: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+58: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+58: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+58: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+59: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+59: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+59: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+59: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+59: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+59: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+59: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+59: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+60: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+60: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+60: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+60: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+60: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+60: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+60: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+60: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+Predictions: tensor([[1.0516e-25, 1.0000e+00],
+        [5.2619e-04, 9.9947e-01],
+        [7.5058e-21, 1.0000e+00],
+        [9.9982e-01, 1.8292e-04],
+        [1.0000e+00, 2.1728e-13],
+        [1.0000e+00, 0.0000e+00],
+        [1.0000e+00, 7.6922e-19],
+        [1.0190e-24, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[1.5470e-03, 9.9845e-01],
+        [1.0000e+00, 4.1526e-29],
+        [1.0155e-10, 1.0000e+00],
+        [6.4675e-31, 1.0000e+00],
+        [5.7407e-06, 9.9999e-01],
+        [1.0000e+00, 8.3019e-10],
+        [4.2772e-28, 1.0000e+00],
+        [1.0000e+00, 5.0278e-16]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[1.2516e-04, 9.9987e-01],
+        [5.7954e-21, 1.0000e+00],
+        [1.0000e+00, 9.8804e-15],
+        [9.9602e-01, 3.9836e-03],
+        [9.9999e-01, 1.2740e-05]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+61: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+61: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+61: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+61: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+61: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+61: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+61: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+61: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+62: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+62: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+62: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+62: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+62: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+62: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+62: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+62: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+63: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+63: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+63: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+63: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+63: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+63: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+63: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+63: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+64: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+64: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+64: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+64: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+64: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+64: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+64: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+64: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+65: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+65: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+65: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+65: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+65: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+65: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+65: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+65: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+66: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+66: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+66: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+66: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+66: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+66: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+66: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+66: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+67: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+67: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+67: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+67: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+67: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+67: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+67: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+67: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+68: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+68: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+68: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+68: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+68: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+68: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+68: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+68: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+69: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+69: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+69: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+69: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+69: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+69: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+69: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+69: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+70: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+70: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+70: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+70: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+70: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+70: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+70: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+70: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+Predictions: tensor([[1.7363e-36, 1.0000e+00],
+        [2.4779e-10, 1.0000e+00],
+        [2.5764e-28, 1.0000e+00],
+        [5.6110e-01, 4.3890e-01],
+        [9.9994e-01, 5.8741e-05],
+        [1.0000e+00, 0.0000e+00],
+        [1.0000e+00, 3.3616e-13],
+        [1.9366e-21, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[1.3437e-15, 1.0000e+00],
+        [1.0000e+00, 8.2398e-15],
+        [4.5635e-17, 1.0000e+00],
+        [2.8831e-36, 1.0000e+00],
+        [1.0000e+00, 6.3684e-07],
+        [1.0000e+00, 2.8623e-10],
+        [4.2652e-20, 1.0000e+00],
+        [1.0000e+00, 2.0511e-11]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[1.2389e-08, 1.0000e+00],
+        [2.1442e-32, 1.0000e+00],
+        [1.0000e+00, 2.8571e-11],
+        [1.0000e+00, 8.8181e-10],
+        [4.2717e-01, 5.7283e-01]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+71: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+71: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+71: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+71: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+71: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+71: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+71: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+71: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+72: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+72: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+72: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+72: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+72: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+72: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+72: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+72: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+73: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+73: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+73: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+73: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+73: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+73: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+73: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+73: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+74: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+74: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+74: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+74: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+74: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+74: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+74: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+74: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+75: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+75: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+75: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+75: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+75: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+75: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+75: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+75: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+76: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+76: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+76: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+76: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+76: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+76: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+76: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+76: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+77: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+77: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+77: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+77: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+77: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+77: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+77: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+77: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+78: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+78: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+78: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+78: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+78: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+78: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+78: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+78: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+79: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+79: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+79: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+79: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+79: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+79: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+79: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+79: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+80: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+80: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+80: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+80: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+80: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+80: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+80: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+80: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+Predictions: tensor([[1.7240e-26, 1.0000e+00],
+        [9.0556e-09, 1.0000e+00],
+        [1.3250e-25, 1.0000e+00],
+        [9.9937e-01, 6.3469e-04],
+        [1.0000e+00, 1.2572e-15],
+        [1.0000e+00, 0.0000e+00],
+        [9.9957e-01, 4.3026e-04],
+        [7.1932e-10, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[2.2823e-02, 9.7718e-01],
+        [1.0000e+00, 1.9198e-36],
+        [1.2104e-14, 1.0000e+00],
+        [3.4517e-12, 1.0000e+00],
+        [1.0000e+00, 1.8267e-11],
+        [1.0000e+00, 5.6190e-20],
+        [1.8054e-06, 1.0000e+00],
+        [1.0000e+00, 8.5245e-31]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[1.0000e+00, 1.4038e-13],
+        [1.1338e-07, 1.0000e+00],
+        [1.0000e+00, 3.8695e-26],
+        [1.0000e+00, 5.6900e-14],
+        [1.0000e+00, 5.3206e-09]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+81: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+81: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+81: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+81: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+81: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+81: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+81: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+81: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+82: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+82: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+82: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+82: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+82: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+82: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+82: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+82: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+83: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+83: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+83: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+83: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+83: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+83: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+83: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+83: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+84: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+84: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+84: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+84: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+84: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+84: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+84: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+84: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+85: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+85: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+85: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+85: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+85: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+85: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+85: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+85: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+86: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+86: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+86: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+86: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+86: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+86: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+86: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+86: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+87: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+87: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+87: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+87: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+87: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+87: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+87: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+87: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+88: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+88: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+88: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+88: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+88: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+88: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+88: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+88: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+89: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+89: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+89: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+89: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+89: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+89: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+89: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+89: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+90: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+90: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+90: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+90: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+90: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+90: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+90: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+90: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+Predictions: tensor([[4.1700e-26, 1.0000e+00],
+        [4.4711e-09, 1.0000e+00],
+        [3.2967e-25, 1.0000e+00],
+        [1.0000e+00, 4.2032e-10],
+        [7.8051e-01, 2.1949e-01],
+        [1.0000e+00, 0.0000e+00],
+        [1.0000e+00, 4.0131e-06],
+        [2.6927e-12, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[2.7559e-30, 1.0000e+00],
+        [1.0000e+00, 1.2050e-27],
+        [9.9683e-10, 1.0000e+00],
+        [1.8159e-16, 1.0000e+00],
+        [9.9952e-01, 4.8413e-04],
+        [1.0000e+00, 2.6796e-12],
+        [1.1065e-17, 1.0000e+00],
+        [1.0000e+00, 5.3721e-30]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[1.0000e+00, 6.0955e-07],
+        [1.6151e-19, 1.0000e+00],
+        [1.0000e+00, 4.1113e-06],
+        [9.9967e-01, 3.2903e-04],
+        [1.0000e+00, 3.5606e-08]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+91: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+91: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+91: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+91: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+91: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+91: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+91: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+91: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+92: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+92: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+92: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+92: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+92: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+92: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+92: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+92: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+93: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+93: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+93: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+93: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+93: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+93: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+93: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+93: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+94: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+94: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+94: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+94: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+94: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+94: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+94: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+94: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+95: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+95: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+95: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+95: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+95: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+95: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+95: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+95: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+96: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+96: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+96: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+96: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+96: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+96: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+96: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+96: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+97: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+97: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+97: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+97: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+97: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+97: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+97: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+97: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+98: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+98: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+98: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+98: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+98: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+98: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+98: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+98: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+99: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+99: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+99: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+99: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+99: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+99: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+99: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+99: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+100: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+100: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+100: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+100: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+100: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+100: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+100: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+100: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+Predictions: tensor([[1.4066e-28, 1.0000e+00],
+        [3.4051e-09, 1.0000e+00],
+        [0.0000e+00, 1.0000e+00],
+        [7.9561e-01, 2.0439e-01],
+        [9.9999e-01, 8.3099e-06],
+        [1.0000e+00, 8.6672e-32],
+        [1.0000e+00, 4.1962e-17],
+        [9.9733e-14, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[4.0342e-27, 1.0000e+00],
+        [1.0000e+00, 1.2263e-32],
+        [1.2611e-15, 1.0000e+00],
+        [2.4925e-19, 1.0000e+00],
+        [3.9074e-19, 1.0000e+00],
+        [1.0000e+00, 3.5953e-09],
+        [7.2189e-25, 1.0000e+00],
+        [1.0000e+00, 2.0745e-23]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[5.2747e-01, 4.7253e-01],
+        [3.0628e-21, 1.0000e+00],
+        [1.0000e+00, 3.7078e-16],
+        [1.0000e+00, 8.2600e-08],
+        [9.9998e-01, 2.2158e-05]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+101: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+101: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+101: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+101: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+101: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+101: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+101: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+101: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+102: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+102: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+102: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+102: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+102: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+102: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+102: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+102: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+103: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+103: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+103: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+103: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+103: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+103: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+103: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+103: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+104: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+104: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+104: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+104: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+104: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+104: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+104: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+104: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+105: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+105: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+105: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+105: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+105: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+105: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+105: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+105: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+106: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+106: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+106: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+106: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+106: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+106: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+106: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+106: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+107: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+107: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+107: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+107: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+107: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+107: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+107: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+107: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+108: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+108: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+108: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+108: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+108: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+108: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+108: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+108: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+109: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+109: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+109: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+109: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+109: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+109: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+109: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+109: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+110: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+110: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+110: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+110: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+110: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+110: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+110: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+110: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+Predictions: tensor([[2.4134e-22, 1.0000e+00],
+        [1.3372e-05, 9.9999e-01],
+        [1.6674e-23, 1.0000e+00],
+        [1.0000e+00, 2.7992e-13],
+        [1.8464e-01, 8.1536e-01],
+        [1.0000e+00, 1.0829e-33],
+        [1.0000e+00, 7.1902e-08],
+        [1.4229e-04, 9.9986e-01]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[2.9992e-20, 1.0000e+00],
+        [1.0000e+00, 1.2987e-19],
+        [4.0024e-03, 9.9600e-01],
+        [4.9156e-23, 1.0000e+00],
+        [1.0000e+00, 3.9566e-11],
+        [1.0000e+00, 4.1288e-20],
+        [1.0946e-30, 1.0000e+00],
+        [1.0000e+00, 1.4844e-20]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[2.3490e-02, 9.7651e-01],
+        [5.7764e-21, 1.0000e+00],
+        [1.0000e+00, 1.3240e-11],
+        [1.0000e+00, 4.0939e-12],
+        [1.0000e+00, 6.8208e-09]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+111: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+111: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+111: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+111: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+111: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+111: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+111: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+111: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+112: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+112: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+112: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+112: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+112: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+112: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+112: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+112: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+113: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+113: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+113: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+113: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+113: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+113: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+113: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+113: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+114: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+114: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+114: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+114: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+114: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+114: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+114: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+114: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+115: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+115: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+115: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+115: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+115: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+115: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+115: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+115: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+116: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+116: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+116: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+116: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+116: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+116: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+116: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+116: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+117: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+117: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+117: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+117: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+117: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+117: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+117: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+117: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+118: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+118: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+118: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+118: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+118: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+118: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+118: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+118: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+119: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+119: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+119: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+119: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+119: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+119: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+119: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+119: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+120: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+120: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+120: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+120: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+120: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+120: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+120: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+120: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+Predictions: tensor([[1.1697e-27, 1.0000e+00],
+        [3.4124e-13, 1.0000e+00],
+        [2.0250e-32, 1.0000e+00],
+        [3.5960e-03, 9.9640e-01],
+        [5.8988e-10, 1.0000e+00],
+        [1.0000e+00, 3.8723e-26],
+        [9.9946e-01, 5.3777e-04],
+        [4.4568e-28, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[1.6500e-24, 1.0000e+00],
+        [1.0000e+00, 6.9147e-13],
+        [2.6136e-18, 1.0000e+00],
+        [4.1004e-18, 1.0000e+00],
+        [1.5688e-13, 1.0000e+00],
+        [1.0000e+00, 1.9750e-08],
+        [2.6683e-37, 1.0000e+00],
+        [1.0000e+00, 3.7548e-11]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[2.6554e-04, 9.9973e-01],
+        [7.1835e-28, 1.0000e+00],
+        [1.0000e+00, 2.5188e-13],
+        [1.0000e+00, 3.4563e-11],
+        [9.9897e-01, 1.0281e-03]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+121: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+121: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+121: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+121: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+121: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+121: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+121: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+121: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+122: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+122: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+122: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+122: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+122: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+122: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+122: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+122: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+123: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+123: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+123: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+123: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+123: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+123: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+123: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+123: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+124: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+124: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+124: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+124: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+124: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+124: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+124: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+124: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+125: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+125: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+125: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+125: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+125: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+125: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+125: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+125: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+126: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+126: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+126: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+126: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+126: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+126: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+126: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+126: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+127: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+127: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+127: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+127: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+127: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+127: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+127: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+127: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+128: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+128: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+128: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+128: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+128: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+128: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+128: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+128: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+129: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+129: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+129: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+129: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+129: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+129: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+129: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+129: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+130: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+130: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+130: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+130: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+130: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+130: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+130: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+130: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+Predictions: tensor([[5.5542e-28, 1.0000e+00],
+        [3.5178e-11, 1.0000e+00],
+        [3.9233e-35, 1.0000e+00],
+        [1.0000e+00, 1.1102e-08],
+        [6.1515e-01, 3.8485e-01],
+        [1.0000e+00, 8.9878e-41],
+        [9.9998e-01, 1.6377e-05],
+        [6.6379e-05, 9.9993e-01]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[3.0276e-35, 1.0000e+00],
+        [1.0000e+00, 2.5915e-16],
+        [1.7429e-09, 1.0000e+00],
+        [2.7568e-05, 9.9997e-01],
+        [1.5170e-06, 1.0000e+00],
+        [1.0000e+00, 1.3089e-19],
+        [7.3134e-07, 1.0000e+00],
+        [1.0000e+00, 6.6570e-18]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[7.9062e-01, 2.0938e-01],
+        [1.5695e-31, 1.0000e+00],
+        [1.0000e+00, 1.2901e-12],
+        [1.0000e+00, 1.5415e-12],
+        [9.9923e-01, 7.6706e-04]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+131: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+131: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+131: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+131: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+131: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+131: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+131: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+131: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+132: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+132: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+132: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+132: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+132: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+132: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+132: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+132: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+133: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+133: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+133: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+133: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+133: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+133: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+133: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+133: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+134: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+134: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+134: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+134: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+134: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+134: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+134: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+134: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+135: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+135: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+135: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+135: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+135: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+135: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+135: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+135: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+136: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+136: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+136: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+136: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+136: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+136: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+136: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+136: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+137: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+137: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+137: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+137: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+137: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+137: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+137: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+137: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+138: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+138: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+138: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+138: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+138: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+138: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+138: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+138: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+139: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+139: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+139: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+139: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+139: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+139: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+139: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+139: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+140: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+140: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+140: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+140: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+140: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+140: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+140: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+140: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+Predictions: tensor([[1.7641e-34, 1.0000e+00],
+        [2.7839e-08, 1.0000e+00],
+        [3.6463e-33, 1.0000e+00],
+        [9.9997e-01, 3.2619e-05],
+        [2.8802e-06, 1.0000e+00],
+        [1.0000e+00, 4.1831e-37],
+        [1.0000e+00, 1.7991e-09],
+        [1.3368e-07, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[2.4975e-15, 1.0000e+00],
+        [1.0000e+00, 5.7674e-33],
+        [2.6566e-10, 1.0000e+00],
+        [1.0222e-31, 1.0000e+00],
+        [3.0691e-02, 9.6931e-01],
+        [1.0000e+00, 1.0844e-17],
+        [2.2634e-14, 1.0000e+00],
+        [1.0000e+00, 5.7043e-24]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[9.3433e-03, 9.9066e-01],
+        [8.4424e-25, 1.0000e+00],
+        [1.0000e+00, 2.2774e-08],
+        [1.0000e+00, 9.5092e-13],
+        [1.0000e+00, 3.4168e-06]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+141: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+141: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+141: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+141: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+141: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+141: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+141: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+141: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+142: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+142: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+142: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+142: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+142: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+142: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+142: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+142: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+143: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+143: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+143: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+143: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+143: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+143: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+143: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+143: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+144: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+144: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+144: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+144: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+144: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+144: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+144: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+144: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+145: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+145: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+145: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+145: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+145: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+145: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+145: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+145: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+146: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+146: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+146: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+146: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+146: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+146: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+146: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+146: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+147: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+147: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+147: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+147: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+147: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+147: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+147: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+147: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+148: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+148: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+148: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+148: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+148: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+148: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+148: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+148: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+149: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+149: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+149: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+149: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+149: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+149: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+149: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+149: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+150: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+150: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+150: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+150: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+150: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+150: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+150: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+150: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+Predictions: tensor([[3.9751e-32, 1.0000e+00],
+        [3.3348e-03, 9.9667e-01],
+        [7.3153e-29, 1.0000e+00],
+        [9.9999e-01, 5.3324e-06],
+        [2.3760e-04, 9.9976e-01],
+        [1.0000e+00, 7.6259e-34],
+        [1.0000e+00, 5.3526e-11],
+        [5.8510e-11, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[9.4246e-13, 1.0000e+00],
+        [1.0000e+00, 7.6870e-09],
+        [6.6432e-08, 1.0000e+00],
+        [1.3759e-05, 9.9999e-01],
+        [9.9991e-01, 8.8662e-05],
+        [1.0000e+00, 2.7410e-18],
+        [1.6554e-26, 1.0000e+00],
+        [1.0000e+00, 4.8592e-11]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[1.3964e-03, 9.9860e-01],
+        [3.1295e-33, 1.0000e+00],
+        [1.0000e+00, 3.3622e-12],
+        [1.0000e+00, 9.9612e-13],
+        [9.9863e-01, 1.3653e-03]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+151: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+151: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+151: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+151: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+151: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+151: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+151: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+151: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+152: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+152: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+152: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+152: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+152: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+152: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+152: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+152: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+153: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+153: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+153: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+153: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+153: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+153: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+153: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+153: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+154: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+154: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+154: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+154: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+154: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+154: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+154: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+154: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+155: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+155: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+155: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+155: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+155: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+155: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+155: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+155: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+156: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+156: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+156: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+156: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+156: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+156: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+156: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+156: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+157: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+157: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+157: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+157: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+157: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+157: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+157: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+157: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+158: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+158: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+158: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+158: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+158: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+158: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+158: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+158: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+159: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+159: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+159: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+159: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+159: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+159: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+159: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+159: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+160: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+160: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+160: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+160: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+160: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+160: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+160: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+160: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+Predictions: tensor([[1.2477e-26, 1.0000e+00],
+        [5.2413e-07, 1.0000e+00],
+        [3.7464e-34, 1.0000e+00],
+        [1.0000e+00, 5.4943e-07],
+        [5.0707e-03, 9.9493e-01],
+        [1.0000e+00, 1.9870e-39],
+        [2.5467e-07, 1.0000e+00],
+        [1.3357e-09, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[4.7258e-25, 1.0000e+00],
+        [1.0000e+00, 1.1411e-14],
+        [1.4467e-16, 1.0000e+00],
+        [5.3938e-03, 9.9461e-01],
+        [1.0000e+00, 1.3008e-07],
+        [1.0000e+00, 1.0245e-12],
+        [2.2845e-23, 1.0000e+00],
+        [1.0000e+00, 5.1943e-11]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[4.8704e-05, 9.9995e-01],
+        [5.6361e-25, 1.0000e+00],
+        [9.9351e-01, 6.4896e-03],
+        [1.0000e+00, 2.2393e-14],
+        [9.3548e-01, 6.4517e-02]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+161: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+161: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+161: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+161: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+161: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+161: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+161: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+161: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+162: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+162: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+162: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+162: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+162: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+162: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+162: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+162: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+163: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+163: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+163: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+163: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+163: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+163: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+163: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+163: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+164: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+164: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+164: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+164: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+164: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+164: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+164: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+164: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+165: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+165: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+165: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+165: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+165: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+165: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+165: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+165: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+166: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+166: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+166: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+166: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+166: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+166: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+166: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+166: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+167: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+167: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+167: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+167: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+167: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+167: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+167: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+167: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+168: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+168: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+168: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+168: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+168: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+168: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+168: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+168: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+169: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+169: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+169: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+169: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+169: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+169: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+169: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+169: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+170: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+170: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+170: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+170: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+170: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+170: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+170: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+170: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+Predictions: tensor([[1.7564e-29, 1.0000e+00],
+        [2.6438e-08, 1.0000e+00],
+        [4.8116e-38, 1.0000e+00],
+        [3.4023e-01, 6.5977e-01],
+        [9.9963e-01, 3.6776e-04],
+        [1.0000e+00, 1.4040e-34],
+        [1.0000e+00, 1.6404e-19],
+        [9.7230e-11, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[3.5671e-22, 1.0000e+00],
+        [1.0000e+00, 4.3992e-32],
+        [4.3654e-13, 1.0000e+00],
+        [6.5012e-22, 1.0000e+00],
+        [1.0000e+00, 2.7349e-06],
+        [1.0000e+00, 3.9285e-14],
+        [9.4012e-19, 1.0000e+00],
+        [1.0000e+00, 4.7482e-23]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[4.0101e-01, 5.9899e-01],
+        [4.6157e-24, 1.0000e+00],
+        [1.0000e+00, 3.7822e-18],
+        [1.0000e+00, 6.0828e-14],
+        [9.8506e-01, 1.4942e-02]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+171: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+171: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+171: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+171: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+171: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+171: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+171: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+171: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+172: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+172: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+172: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+172: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+172: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+172: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+172: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+172: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+173: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+173: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+173: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+173: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+173: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+173: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+173: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+173: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+174: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+174: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+174: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+174: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+174: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+174: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+174: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+174: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+175: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+175: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+175: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+175: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+175: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+175: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+175: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+175: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+176: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+176: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+176: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+176: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+176: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+176: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+176: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+176: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+177: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+177: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+177: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+177: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+177: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+177: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+177: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+177: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+178: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+178: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+178: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+178: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+178: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+178: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+178: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+178: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+179: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+179: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+179: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+179: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+179: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+179: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+179: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+179: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+180: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+180: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+180: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+180: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+180: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+180: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+180: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+180: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+Predictions: tensor([[8.5472e-32, 1.0000e+00],
+        [7.0636e-06, 9.9999e-01],
+        [2.3497e-39, 1.0000e+00],
+        [9.9999e-01, 1.1533e-05],
+        [1.0935e-01, 8.9065e-01],
+        [1.0000e+00, 5.7548e-37],
+        [1.0000e+00, 1.1745e-20],
+        [2.9530e-09, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[2.0627e-16, 1.0000e+00],
+        [1.0000e+00, 5.7933e-31],
+        [2.0076e-10, 1.0000e+00],
+        [7.5145e-17, 1.0000e+00],
+        [1.0000e+00, 5.3468e-12],
+        [1.0000e+00, 3.7133e-12],
+        [8.2605e-30, 1.0000e+00],
+        [1.0000e+00, 6.4589e-22]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[5.2255e-01, 4.7745e-01],
+        [5.0109e-25, 1.0000e+00],
+        [2.1296e-01, 7.8704e-01],
+        [1.0000e+00, 4.5273e-10],
+        [9.9948e-01, 5.2102e-04]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+181: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+181: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+181: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+181: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+181: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+181: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+181: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+181: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+182: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+182: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+182: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+182: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+182: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+182: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+182: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+182: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+183: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+183: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+183: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+183: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+183: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+183: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+183: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+183: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+184: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+184: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+184: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+184: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+184: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+184: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+184: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+184: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+185: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+185: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+185: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+185: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+185: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+185: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+185: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+185: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+186: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+186: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+186: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+186: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+186: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+186: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+186: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+186: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+187: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+187: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+187: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+187: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+187: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+187: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+187: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+187: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+188: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+188: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+188: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+188: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+188: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+188: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+188: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+188: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+189: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+189: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+189: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+189: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+189: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+189: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+189: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+189: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+190: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+190: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+190: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+190: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+190: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+190: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+190: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+190: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+Predictions: tensor([[5.9102e-32, 1.0000e+00],
+        [1.0357e-05, 9.9999e-01],
+        [6.0179e-24, 1.0000e+00],
+        [1.0000e+00, 1.8338e-06],
+        [9.6991e-01, 3.0088e-02],
+        [1.0000e+00, 8.2752e-41],
+        [1.0000e+00, 2.8012e-13],
+        [7.5523e-16, 1.0000e+00]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1], device='cuda:0')
+Predictions: tensor([[2.1102e-06, 1.0000e+00],
+        [1.0000e+00, 2.2548e-23],
+        [2.4980e-15, 1.0000e+00],
+        [6.6997e-18, 1.0000e+00],
+        [4.9879e-16, 1.0000e+00],
+        [1.0000e+00, 3.4994e-18],
+        [6.7201e-33, 1.0000e+00],
+        [1.0000e+00, 7.6629e-11]], device='cuda:0') Labels: tensor([0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[1.1485e-01, 8.8515e-01],
+        [5.6582e-16, 1.0000e+00],
+        [1.0000e+00, 2.6879e-22],
+        [1.0000e+00, 3.0641e-17],
+        [9.9769e-01, 2.3090e-03]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+191: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+191: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+191: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+191: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+191: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+191: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+191: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+191: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+192: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+192: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+192: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+192: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+192: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+192: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+192: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+192: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+193: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+193: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+193: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+193: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+193: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+193: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+193: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+193: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+194: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+194: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+194: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+194: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+194: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+194: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+194: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+194: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+195: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+195: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+195: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+195: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+195: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+195: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+195: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+195: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+196: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+196: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+196: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+196: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+196: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+196: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+196: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+196: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+197: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+197: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+197: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+197: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+197: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+197: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+197: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+197: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+198: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+198: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+198: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+198: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+198: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+198: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+198: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+198: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+199: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+199: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+199: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+199: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+199: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+199: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+199: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+199: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+Val accuracy: Top1 Acc: 76.19 Top5 Acc: 100.00 MEM: 0.80
+Test accuracy: _ak48.39 Top1 Acc: 48.39 Top5 Acc: 100.00 MEM: 0.99 dataset: k2
+
+Val accuracy: Top1 Acc: 0.00 Top5 Acc: 0.00 MEM: 0.73
+Test accuracy: _ak48.39 Top1 Acc: 48.39 Top5 Acc: 100.00 MEM: 0.99 dataset: k2
+0: Train Top1 Acc: 43.75, Train Top5 Acc: 100.0
+0: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+0: Train Top1 Acc: 68.75, Train Top5 Acc: 100.0
+0: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+Predictions: tensor([[0.1800, 0.8200],
+        [0.2204, 0.7796],
+        [0.1986, 0.8014],
+        [0.2212, 0.7788],
+        [0.4192, 0.5808],
+        [0.5409, 0.4591],
+        [0.5655, 0.4345],
+        [0.2876, 0.7124],
+        [0.2368, 0.7632],
+        [0.4034, 0.5966],
+        [0.3728, 0.6272],
+        [0.2374, 0.7626],
+        [0.2658, 0.7342],
+        [0.4138, 0.5862],
+        [0.3677, 0.6323],
+        [0.3017, 0.6983]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[0.3483, 0.6517],
+        [0.3954, 0.6046],
+        [0.4163, 0.5838],
+        [0.4418, 0.5582],
+        [0.3229, 0.6771]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+1: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+1: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+1: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+1: Train Top1 Acc: 68.75, Train Top5 Acc: 100.0
+2: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+2: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+2: Train Top1 Acc: 56.25, Train Top5 Acc: 100.0
+2: Train Top1 Acc: 68.75, Train Top5 Acc: 100.0
+3: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+3: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+3: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+3: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+4: Train Top1 Acc: 68.75, Train Top5 Acc: 100.0
+4: Train Top1 Acc: 43.75, Train Top5 Acc: 100.0
+4: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+4: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+5: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+5: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+5: Train Top1 Acc: 68.75, Train Top5 Acc: 100.0
+5: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+6: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+6: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+6: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+6: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+7: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+7: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+7: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+7: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+8: Train Top1 Acc: 68.75, Train Top5 Acc: 100.0
+8: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+8: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+8: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+9: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+9: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+9: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+9: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+10: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+10: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+10: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+10: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+Predictions: tensor([[2.3898e-07, 1.0000e+00],
+        [3.2180e-02, 9.6782e-01],
+        [1.8148e-04, 9.9982e-01],
+        [8.8811e-01, 1.1189e-01],
+        [1.9125e-01, 8.0875e-01],
+        [9.9988e-01, 1.2381e-04],
+        [3.5303e-01, 6.4697e-01],
+        [2.7915e-01, 7.2085e-01],
+        [2.3075e-03, 9.9769e-01],
+        [8.0622e-01, 1.9378e-01],
+        [5.1470e-01, 4.8530e-01],
+        [5.7493e-01, 4.2507e-01],
+        [1.9793e-01, 8.0207e-01],
+        [9.9869e-01, 1.3063e-03],
+        [1.3407e-02, 9.8659e-01],
+        [8.2460e-01, 1.7540e-01]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[0.0215, 0.9785],
+        [0.0011, 0.9989],
+        [0.8771, 0.1229],
+        [0.9579, 0.0421],
+        [0.8229, 0.1771]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+11: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+11: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+11: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+11: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+12: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+12: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+12: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+12: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+13: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+13: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+13: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+13: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+14: Train Top1 Acc: 68.75, Train Top5 Acc: 100.0
+14: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+14: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+14: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+15: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+15: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+15: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+15: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+16: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+16: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+16: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+16: Train Top1 Acc: 68.75, Train Top5 Acc: 100.0
+17: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+17: Train Top1 Acc: 68.75, Train Top5 Acc: 100.0
+17: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+17: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+18: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+18: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+18: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+18: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+19: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+19: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+19: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+19: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+20: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+20: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+20: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+20: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+Predictions: tensor([[3.3317e-08, 1.0000e+00],
+        [2.6524e-01, 7.3476e-01],
+        [2.9067e-05, 9.9997e-01],
+        [9.0831e-01, 9.1687e-02],
+        [8.0191e-01, 1.9809e-01],
+        [1.0000e+00, 1.8212e-11],
+        [9.6013e-01, 3.9875e-02],
+        [2.6644e-03, 9.9734e-01],
+        [1.4560e-05, 9.9999e-01],
+        [9.9860e-01, 1.4043e-03],
+        [2.5324e-01, 7.4676e-01],
+        [8.4966e-01, 1.5034e-01],
+        [5.9868e-01, 4.0132e-01],
+        [9.6919e-01, 3.0814e-02],
+        [3.3510e-06, 1.0000e+00],
+        [2.3569e-05, 9.9998e-01]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[6.6138e-02, 9.3386e-01],
+        [6.5714e-07, 1.0000e+00],
+        [6.7544e-01, 3.2456e-01],
+        [9.9313e-01, 6.8730e-03],
+        [2.0667e-01, 7.9333e-01]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+21: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+21: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+21: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+21: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+22: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+22: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+22: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+22: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+23: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+23: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+23: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+23: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+24: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+24: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+24: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+24: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+25: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+25: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+25: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+25: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+26: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+26: Train Top1 Acc: 68.75, Train Top5 Acc: 100.0
+26: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+26: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+27: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+27: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+27: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+27: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+28: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+28: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+28: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+28: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+29: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+29: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+29: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+29: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+30: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+30: Train Top1 Acc: 68.75, Train Top5 Acc: 100.0
+30: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+30: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+Predictions: tensor([[6.0309e-11, 1.0000e+00],
+        [8.5678e-04, 9.9914e-01],
+        [1.8417e-09, 1.0000e+00],
+        [8.6190e-01, 1.3810e-01],
+        [9.7996e-01, 2.0043e-02],
+        [1.0000e+00, 3.3545e-12],
+        [9.9928e-01, 7.1760e-04],
+        [3.8881e-01, 6.1119e-01],
+        [5.0767e-07, 1.0000e+00],
+        [1.2953e-02, 9.8705e-01],
+        [5.1790e-03, 9.9482e-01],
+        [3.9213e-02, 9.6079e-01],
+        [9.9925e-01, 7.5238e-04],
+        [9.6858e-01, 3.1423e-02],
+        [2.8260e-01, 7.1740e-01],
+        [2.8128e-03, 9.9719e-01]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[9.2691e-01, 7.3087e-02],
+        [2.2530e-06, 1.0000e+00],
+        [9.9986e-01, 1.4150e-04],
+        [9.9999e-01, 1.1267e-05],
+        [9.4206e-01, 5.7945e-02]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+31: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+31: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+31: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+31: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+32: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+32: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+32: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+32: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+33: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+33: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+33: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+33: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+34: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+34: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+34: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+34: Train Top1 Acc: 68.75, Train Top5 Acc: 100.0
+35: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+35: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+35: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+35: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+36: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+36: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+36: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+36: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+37: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+37: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+37: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+37: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+38: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+38: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+38: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+38: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+39: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+39: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+39: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+39: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+40: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+40: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+40: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+40: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+Predictions: tensor([[9.7189e-13, 1.0000e+00],
+        [3.1726e-04, 9.9968e-01],
+        [1.1601e-07, 1.0000e+00],
+        [5.9168e-02, 9.4083e-01],
+        [9.8934e-01, 1.0665e-02],
+        [1.0000e+00, 9.7784e-09],
+        [1.0000e+00, 9.3821e-07],
+        [2.3657e-01, 7.6343e-01],
+        [6.9598e-08, 1.0000e+00],
+        [1.9275e-04, 9.9981e-01],
+        [1.3165e-01, 8.6835e-01],
+        [1.3465e-04, 9.9987e-01],
+        [9.2527e-03, 9.9075e-01],
+        [9.8676e-01, 1.3235e-02],
+        [2.2061e-07, 1.0000e+00],
+        [1.8888e-04, 9.9981e-01]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[3.0353e-01, 6.9647e-01],
+        [6.1754e-10, 1.0000e+00],
+        [6.4514e-01, 3.5486e-01],
+        [9.9999e-01, 6.2087e-06],
+        [9.4194e-01, 5.8057e-02]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1], device='cuda:0')
+41: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+41: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+41: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+41: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+42: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+42: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+42: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+42: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+43: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+43: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+43: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+43: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+44: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+44: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+44: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+44: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+45: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+45: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+45: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+45: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+46: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+46: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+46: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+46: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+47: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+47: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+47: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+47: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+48: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+48: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+48: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+48: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+49: Train Top1 Acc: 81.25, Train Top5 Acc: 100.0
+49: Train Top1 Acc: 100.0, Train Top5 Acc: 100.0
+49: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+49: Train Top1 Acc: 93.75, Train Top5 Acc: 100.0
+Val accuracy: Top1 Acc: 80.95 Top5 Acc: 100.00 MEM: 1.67
+Test accuracy: _ak45.16 Top1 Acc: 45.16 Top5 Acc: 100.00 MEM: 1.67 dataset: k2
+Val accuracy: Top1 Acc: 0.00 Top5 Acc: 0.00 MEM: 0.73
+Val accuracy: Top1 Acc: 0.00 Top5 Acc: 0.00 MEM: 0.73
+Val accuracy: Top1 Acc: 0.00 Top5 Acc: 0.00 MEM: 0.73
+Test accuracy: _ak3.85 Top1 Acc: 3.85 Top5 Acc: 30.77 MEM: 0.99 dataset: k11
+Val accuracy: Top1 Acc: 0.00 Top5 Acc: 0.00 MEM: 0.73
+Test accuracy: _ak46.15 Top1 Acc: 46.15 Top5 Acc: 100.00 MEM: 0.99 dataset: k2
+50: Train Top1 Acc: 43.75, Train Top5 Acc: 100.0
+50: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+50: Train Top1 Acc: 56.25, Train Top5 Acc: 100.0
+50: Train Top1 Acc: 87.5, Train Top5 Acc: 100.0
+Predictions: tensor([[0.4354, 0.5646],
+        [0.4223, 0.5777],
+        [0.3875, 0.6125],
+        [0.4686, 0.5314],
+        [0.5254, 0.4746],
+        [0.6127, 0.3873],
+        [0.5976, 0.4024],
+        [0.5101, 0.4899],
+        [0.4589, 0.5411],
+        [0.5827, 0.4173],
+        [0.4836, 0.5164],
+        [0.4748, 0.5252],
+        [0.4567, 0.5433],
+        [0.4611, 0.5389],
+        [0.5143, 0.4857],
+        [0.4346, 0.5654]], device='cuda:0') Labels: tensor([1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1], device='cuda:0')
+Predictions: tensor([[0.4403, 0.5597],
+        [0.5557, 0.4443],
+        [0.5719, 0.4281],
+        [0.5182, 0.4818],
+        [0.4470, 0.5530],
+        [0.4815, 0.5185],
+        [0.4846, 0.5154],
+        [0.4612, 0.5388],
+        [0.4165, 0.5835],
+        [0.4334, 0.5666]], device='cuda:0') Labels: tensor([1, 1, 0, 0, 1, 1, 0, 0, 0, 0], device='cuda:0')
+51: Train Top1 Acc: 43.75, Train Top5 Acc: 100.0
+51: Train Top1 Acc: 25.0, Train Top5 Acc: 100.0
+51: Train Top1 Acc: 31.25, Train Top5 Acc: 100.0
+51: Train Top1 Acc: 37.5, Train Top5 Acc: 100.0
+52: Train Top1 Acc: 43.75, Train Top5 Acc: 100.0
+52: Train Top1 Acc: 43.75, Train Top5 Acc: 100.0
+52: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+52: Train Top1 Acc: 56.25, Train Top5 Acc: 100.0
+53: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+53: Train Top1 Acc: 56.25, Train Top5 Acc: 100.0
+53: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+53: Train Top1 Acc: 50.0, Train Top5 Acc: 100.0
+54: Train Top1 Acc: 56.25, Train Top5 Acc: 100.0
+54: Train Top1 Acc: 62.5, Train Top5 Acc: 100.0
+54: Train Top1 Acc: 56.25, Train Top5 Acc: 100.0
+54: Train Top1 Acc: 75.0, Train Top5 Acc: 100.0
+Val accuracy: Top1 Acc: 65.38 Top5 Acc: 100.00 MEM: 1.67
+Test accuracy: _ak53.85 Top1 Acc: 53.85 Top5 Acc: 100.00 MEM: 1.67 dataset: k2
+
