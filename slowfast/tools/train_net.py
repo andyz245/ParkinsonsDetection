@@ -23,13 +23,11 @@ from slowfast.models import build_model
 from slowfast.models.contrastive import cancel_swav_gradients
 from slowfast.utils.meters import AVAMeter, EpochTimer, TrainMeter, ValMeter
 from slowfast.utils.multigrid import MultigridSchedule
+from sklearn.metrics import roc_auc_score
 
 logger = logging.get_logger(__name__)
 
-if cfg.MODEL.NUM_CLASSES > 5:
-    k = 5
-else:
-    k = cfg.MODEL.NUM_CLASSES
+k = 2
 
 
 def train_epoch(
@@ -60,6 +58,7 @@ def train_epoch(
     model.train()
     train_meter.iter_tic()
     data_size = len(train_loader)
+    print("DATASIZE", data_size)
 
     if cfg.MIXUP.ENABLE:
         mixup_fn = MixUp(
@@ -384,7 +383,7 @@ def eval_epoch(
             else:
                 # Compute the errors.
                 num_topks_correct = metrics.topks_correct(preds, labels, (1, k))
-
+                
                 # Combine the errors across the GPUs.
                 top1_err, top5_err = [
                     (1.0 - x / preds.size(0)) * 100.0 for x in num_topks_correct
@@ -449,7 +448,6 @@ def eval_epoch(
             writer.plot_eval(
                 preds=all_preds, labels=all_labels, global_step=cur_epoch
             )
-
     val_meter.reset()
     return last_val_acc
 
@@ -547,6 +545,8 @@ def build_trainer(cfg):
     """
     # Build the video model and print model statistics.
     model = build_model(cfg)
+    print("Num Params", sum(p.numel() for p in model.parameters() if p.requires_grad))
+    
     if du.is_master_proc() and cfg.LOG_MODEL_INFO:
         misc.log_model_info(model, cfg, use_train_input=True)
 
@@ -722,16 +722,34 @@ def train(cfg):
             param.requires_grad = True
             '''
     else:
+        '''
         for param in model.s1.parameters():
             param.requires_grad = False
         for param in model.s2.parameters():
             param.requires_grad = False
+        for param in model.s3.parameters():
+            param.requires_grad = False
+        for param in model.s4.parameters():
+            param.requires_grad = False
         for param in model.s5.parameters():
             param.requires_grad = False
-
-        print("All parameters frozen")
-        print(model.children())
+        print(model)
         '''
+        print("Num Params", sum(p.numel() for p in model.parameters() if p.requires_grad))
+        #print("Num Params att", sum(p.numel() for p in model.temporal_attention.parameters() if p.requires_grad))
+        #print("Num Params resnet", sum(p.numel() for p in model.resnet.parameters() if p.requires_grad))
+        
+        for param in model.resnet.parameters():
+            print("Backbone frozen")
+            param.requires_grad_(False) 
+        print(model.resnet)
+        
+        print("Num Params", sum(p.numel() for p in model.parameters() if p.requires_grad))
+        #print("Num Params in Resnet after freeze", sum(p.numel() for p in model.resnet.parameters() if p.requires_grad))
+        print("All parameters frozen")
+        print(model)
+        '''
+        
         for param in model.vit_proj.parameters():
             param.requires_grad = True
         for param in model.vit.parameters():

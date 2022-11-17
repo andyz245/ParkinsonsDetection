@@ -8,23 +8,17 @@ from functools import partial
 import torch
 import torch.nn as nn
 from torch.nn.init import trunc_normal_
+#from roi_align import RoIAlign
 import torchvision.ops.roi_align as roi_align
 import matplotlib.pyplot as plt
 import os
 import cv2
 import numpy as np
-import torch.utils.data
-import torch.utils.data.distributed
 # from vidgear.gears import WriteGear
 
 import slowfast.utils.weight_init_helper as init_helper
 from slowfast.models.attention import MultiScaleBlock
 from slowfast.models.batchnorm_helper import get_norm
-from slowfast.models.efficientnet import EfficientFace, efficient_face
-from slowfast.models.recorder import RecorderMeter
-from slowfast.models.modulator import Modulator
-
-from slowfast.models.resnet import ResNet, resnet50
 from slowfast.models.stem_helper import PatchEmbed
 from slowfast.models.utils import (
     round_width,
@@ -32,7 +26,6 @@ from slowfast.models.utils import (
 )
 
 from slowfast.models.vit import TimeSformer
-from torchvision import transforms
 
 from . import head_helper, resnet_helper, stem_helper
 from .build import MODEL_REGISTRY
@@ -538,22 +531,22 @@ class ResNet(nn.Module):
         }
 
         ########### Config Parameters ###########
-        self.num_classes = cfg.MODEL.NUM_CLASSES
         self.use_max_pool = True
         self.use_s5 = False
         self.roi_align_size = (3, 3)
         self.use_softmax = True
         self.vit_embed_dim = 768
-        self.use_vit = True
+        self.use_vit = False
         self.use_mlp = True
         self.use_bn = True
-        self.st_config = ["temporal_attention", "region_attention"]
+        self.use_st = True
+        self.attention_config = ["temporal", "region"]
+        self.combine_features = False
+        self.pool_video = False
         self.use_pos_embed = True
         self.use_time_embed = True
-        self.image_variant = "video+region"
-        self.use_imagenet_resnet = True
-        self.batch_size = cfg.TRAIN.BATCH_SIZE
-        self.feature_size = 9216
+        self.use_region = True
+        self.region_only = True
         ########################################
 
         self.cls_head = None
@@ -563,83 +556,26 @@ class ResNet(nn.Module):
         self.region_pool = None
         self.temporal_attention = None
         self.region_attention = None
-        self.pos_embed = None
+        #self.output_size = 2106368 video + region ta rp
+        #self.output_size = 271360 #video pool + region ta rp
+        self.output_size = 262144 #baseline pooled video w s5
         self.pos_drop = None
         self.time_embed = None
         self.time_drop = None
-        self.image_mlp = None
-        self.resnet = None
-        self.img_preprocess = None
+        self.st_config = None
+        self.feature_size = 9216
         
-        self.proj = nn.Linear(14336, self.feature_size)
-        if self.image_variant is not None:
-            self.resnet = torch.hub.load('pytorch/vision:v0.10.0', 'resnet50', pretrained=True)
-            self.resnet = torch.nn.DataParallel(self.resnet).cuda()
-            #self.resnet = resnet50()
-            
-            backbone = torch.load("/home/andyz3/PD/FSPD/slowfast/configs/PD/flr_r50_vgg_face.pth")
-            for key in list(backbone['state_dict']):
-                newKeyName = key.replace(".base_net", "")
-                backbone['state_dict'][newKeyName] = backbone['state_dict'].pop(key)
-            
-            backbone['state_dict']["module.projection_net.net.0.weight"] = torch.rand(1000, 2048)
-            backbone['state_dict']['module.projection_net.net.0.bias'] = torch.rand(1000)
-            backbone['state_dict']['module.fc.weight'] = backbone['state_dict']["module.projection_net.net.0.weight"]
-            backbone['state_dict']['module.fc.bias'] = backbone['state_dict']['module.projection_net.net.0.bias']
-            backbone['state_dict'] = {k: v for k, v in backbone['state_dict'].items() if '.projection_net' not in k}
-            backbone['state_dict'] = {k: v for k, v in backbone['state_dict'].items() if '.prototypes' not in k}
-            self.resnet.load_state_dict(backbone['state_dict'])
-            
-            '''
-            self.resnet = efficient_face()
-            self.resnet.fc = nn.Linear(1024, 8)
-            self.resnet = torch.nn.DataParallel(self.resnet).cuda()
-            #checkpoint = torch.load("/home/andyz3/PD/FSPD/slowfast/configs/PD/resnet50_pretrained_on_msceleb.pth.tar")
-            checkpoint = torch.load("/home/andyz3/PD/FSPD/slowfast/configs/PD/EfficientFace_Trained_on_AffectNet8.pth.tar")
-            dic = checkpoint['state_dict']
-            self.resnet.load_state_dict(dic)
-            self.resnet.module.fc = nn.Linear(1024, 7).cuda()
-            '''
-            '''
-            self.resnet.fc = nn.Linear(1024, 12666)
-            self.resnet = torch.nn.DataParallel(self.resnet).cuda()
-            checkpoint = torch.load("/home/andyz3/PD/FSPD/slowfast/configs/PD/resnet50_pretrained_on_msceleb.pth.tar")
-            pre_trained_dict = checkpoint['state_dict']
-            self.resnet.load_state_dict(pre_trained_dict)
-            self.resnet.module.fc = nn.Linear(1024, 2).cuda()
-            self.resnet = torch.load("/home/andyz3/PD/FSPD/slowfast/configs/PD/resnet50_pretrained_on_msceleb.pth.tar")
-            '''
-            self.img_preprocess = transforms.Compose([
-                transforms.Resize(256),
-                transforms.CenterCrop(224),
-                transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-            ])
-
-            # self.image_mlp = nn.Sequential(nn.Linear(262144, sel.f), nn.ReLU(), nn.Linear(4608, self.num_classes))
-            if self.image_variant == "video":
-                #self.image_mlp = nn.Sequential(nn.Linear(1048576, 2408), nn.ReLU(), nn.Linear(2408, self.num_classes))
-                #self.image_mlp = nn.Linear(100352, self.num_classes) 
-                self.image_mlp = nn.Sequential(nn.Linear(9216, 4816), nn.ReLU(), nn.Linear(4816, 2408), nn.ReLU(), nn.Linear(2408, self.num_classes))
-            elif self.image_variant == "region":
-                self.image_mlp = nn.Sequential(nn.Linear(self.feature_size, 4816), nn.ReLU(), nn.Linear(4816, 2408), nn.ReLU(), nn.Linear(2408, self.num_classes))
-                
-                #self.image_mlp = nn.Linear(2064384, self.num_classes)
-                #self.image_mlp = nn.Sequential(nn.Linear(18432, 4816), nn.ReLU(), nn.Linear(4816, 2408), nn.ReLU(), nn.Linear(2408, self.num_classes))
-                
-            else:
-                # self.image_mlp = nn.Linear(262144 + 129024, self.num_classes)
-                #self.image_mlp = nn.Linear(1146880, self.num_classes) 
-                self.image_mlp = nn.Sequential(nn.Linear(18432, 2408), nn.ReLU(), nn.Linear(2408, self.num_classes))
+        if self.use_st:
+            self.st_config = ["temporal_attention", "region_pool"]
 
         if self.use_mlp:
-            self.cls_head = nn.Sequential(nn.Linear(9216, 4608), nn.ReLU(), nn.Linear(4608, 2408), nn.ReLU(), nn.Linear(2408, self.num_classes))
+            self.cls_head = nn.Sequential(nn.Linear(self.feature_size, 4608), nn.ReLU(), nn.Linear(4608, 2408), nn.ReLU(), nn.Linear(2408, cfg.MODEL.NUM_CLASSES))
         else:
-            #self.cls_head = nn.Linear(9216, self.num_classes)
-            self.cls_head = None
+            self.cls_head = nn.Linear(self.output_size, cfg.MODEL.NUM_CLASSES)
 
         if self.use_vit:
-            self.vit_proj = nn.Linear(23552, self.vit_embed_dim)
-            self.vit = TimeSformer(img_size=256, num_classes=2, num_frames=8, attention_type='divided_space_time', depth=1, embed_dim=768, pretrained_model='')
+            self.vit_proj = nn.Linear(self.feature_size, self.vit_embed_dim)
+            self.vit = TimeSformer(img_size=256, num_classes=cfg.MODEL.NUM_CLASSES, num_frames=8, attention_type='divided_space_time', depth=1, embed_dim=768, pretrained_model='')
 
         if self.use_max_pool:
             self.temporal_pool = nn.MaxPool3d((1, 1, 2), stride=(1, 1, 2))
@@ -648,12 +584,11 @@ class ResNet(nn.Module):
             self.temporal_pool = nn.AvgPool3d((1, 1, 2), stride=(1, 1, 2))
             self.region_pool = nn.AvgPool2d((1, 2), stride=(1, 2))
         
-        if self.st_config is not None:
-            self.temporal_attention = Attention(self.feature_size, num_heads=3) if "temporal_attention" in self.st_config else None
-            self.region_attention = Attention(self.feature_size, num_heads=3) if "region_attention" in self.st_config else None
+        if self.attention_config is not None:
+            self.temporal_attention = Attention(self.feature_size, num_heads=3) if "temporal" in self.attention_config else None
+            self.region_attention = Attention(self.feature_size, num_heads=3) if "region" in self.attention_config else None
             self.cls_token = nn.Parameter(torch.zeros(1, 1, self.feature_size))
-            # trunc_normal_(self.cls_token, std=.02)
-
+            
         if self.use_pos_embed:
             self.pos_embed = nn.Parameter(torch.zeros(1, 14+1, self.feature_size))
             # trunc_normal_(self.pos_embed, std=.02)
@@ -665,8 +600,7 @@ class ResNet(nn.Module):
                 self.time_embed = nn.Parameter(torch.zeros(1, 8+1, self.feature_size))
 
         self.act = nn.Softmax(dim=1)
-        self.out_batchnorm = nn.BatchNorm1d(self.num_classes)
-        self.relu = nn.ReLU()
+        self.out_batchnorm = nn.BatchNorm1d(cfg.MODEL.NUM_CLASSES)
 
     def _construct_network(self, cfg):
         """
@@ -690,6 +624,146 @@ class ResNet(nn.Module):
 
         temp_kernel = _TEMPORAL_KERNEL_BASIS[cfg.MODEL.ARCH]
 
+        s1 = stem_helper.VideoModelStem(
+            dim_in=cfg.DATA.INPUT_CHANNEL_NUM,
+            dim_out=[width_per_group],
+            kernel=[temp_kernel[0][0] + [7, 7]],
+            stride=[[1, 2, 2]],
+            padding=[[temp_kernel[0][0][0] // 2, 3, 3]],
+            norm_module=self.norm_module,
+        )
+
+        s2 = resnet_helper.ResStage(
+            dim_in=[width_per_group],
+            dim_out=[width_per_group * 4],
+            dim_inner=[dim_inner],
+            temp_kernel_sizes=temp_kernel[1],
+            stride=cfg.RESNET.SPATIAL_STRIDES[0],
+            num_blocks=[d2],
+            num_groups=[num_groups],
+            num_block_temp_kernel=cfg.RESNET.NUM_BLOCK_TEMP_KERNEL[0],
+            nonlocal_inds=cfg.NONLOCAL.LOCATION[0],
+            nonlocal_group=cfg.NONLOCAL.GROUP[0],
+            nonlocal_pool=cfg.NONLOCAL.POOL[0],
+            instantiation=cfg.NONLOCAL.INSTANTIATION,
+            trans_func_name=cfg.RESNET.TRANS_FUNC,
+            stride_1x1=cfg.RESNET.STRIDE_1X1,
+            inplace_relu=cfg.RESNET.INPLACE_RELU,
+            dilation=cfg.RESNET.SPATIAL_DILATIONS[0],
+            norm_module=self.norm_module,
+        )
+
+        # Based on profiling data of activation size, s1 and s2 have the activation sizes
+        # that are 4X larger than the second largest. Therefore, checkpointing them gives
+        # best memory savings. Further tuning is possible for better memory saving and tradeoffs
+        # with recomputing FLOPs.
+        if cfg.MODEL.ACT_CHECKPOINT:
+            validate_checkpoint_wrapper_import(checkpoint_wrapper)
+            self.s1 = checkpoint_wrapper(s1)
+            self.s2 = checkpoint_wrapper(s2)
+        else:
+            self.s1 = s1
+            self.s2 = s2
+
+        for pathway in range(self.num_pathways):
+            pool = nn.MaxPool3d(
+                kernel_size=pool_size[pathway],
+                stride=pool_size[pathway],
+                padding=[0, 0, 0],
+            )
+            self.add_module("pathway{}_pool".format(pathway), pool)
+
+        self.s3 = resnet_helper.ResStage(
+            dim_in=[width_per_group * 4],
+            dim_out=[width_per_group * 8],
+            dim_inner=[dim_inner * 2],
+            temp_kernel_sizes=temp_kernel[2],
+            stride=cfg.RESNET.SPATIAL_STRIDES[1],
+            num_blocks=[d3],
+            num_groups=[num_groups],
+            num_block_temp_kernel=cfg.RESNET.NUM_BLOCK_TEMP_KERNEL[1],
+            nonlocal_inds=cfg.NONLOCAL.LOCATION[1],
+            nonlocal_group=cfg.NONLOCAL.GROUP[1],
+            nonlocal_pool=cfg.NONLOCAL.POOL[1],
+            instantiation=cfg.NONLOCAL.INSTANTIATION,
+            trans_func_name=cfg.RESNET.TRANS_FUNC,
+            stride_1x1=cfg.RESNET.STRIDE_1X1,
+            inplace_relu=cfg.RESNET.INPLACE_RELU,
+            dilation=cfg.RESNET.SPATIAL_DILATIONS[1],
+            norm_module=self.norm_module,
+        )
+
+        self.s4 = resnet_helper.ResStage(
+            dim_in=[width_per_group * 8],
+            dim_out=[width_per_group * 16],
+            dim_inner=[dim_inner * 4],
+            temp_kernel_sizes=temp_kernel[3],
+            stride=cfg.RESNET.SPATIAL_STRIDES[2],
+            num_blocks=[d4],
+            num_groups=[num_groups],
+            num_block_temp_kernel=cfg.RESNET.NUM_BLOCK_TEMP_KERNEL[2],
+            nonlocal_inds=cfg.NONLOCAL.LOCATION[2],
+            nonlocal_group=cfg.NONLOCAL.GROUP[2],
+            nonlocal_pool=cfg.NONLOCAL.POOL[2],
+            instantiation=cfg.NONLOCAL.INSTANTIATION,
+            trans_func_name=cfg.RESNET.TRANS_FUNC,
+            stride_1x1=cfg.RESNET.STRIDE_1X1,
+            inplace_relu=cfg.RESNET.INPLACE_RELU,
+            dilation=cfg.RESNET.SPATIAL_DILATIONS[2],
+            norm_module=self.norm_module,
+        )
+
+        self.s5 = resnet_helper.ResStage(
+            dim_in=[width_per_group * 16],
+            dim_out=[width_per_group * 32],
+            dim_inner=[dim_inner * 8],
+            temp_kernel_sizes=temp_kernel[4],
+            stride=cfg.RESNET.SPATIAL_STRIDES[3],
+            num_blocks=[d5],
+            num_groups=[num_groups],
+            num_block_temp_kernel=cfg.RESNET.NUM_BLOCK_TEMP_KERNEL[3],
+            nonlocal_inds=cfg.NONLOCAL.LOCATION[3],
+            nonlocal_group=cfg.NONLOCAL.GROUP[3],
+            nonlocal_pool=cfg.NONLOCAL.POOL[3],
+            instantiation=cfg.NONLOCAL.INSTANTIATION,
+            trans_func_name=cfg.RESNET.TRANS_FUNC,
+            stride_1x1=cfg.RESNET.STRIDE_1X1,
+            inplace_relu=cfg.RESNET.INPLACE_RELU,
+            dilation=cfg.RESNET.SPATIAL_DILATIONS[3],
+            norm_module=self.norm_module,
+        )
+
+        if self.enable_detection:
+            self.head = head_helper.ResNetRoIHead(
+                dim_in=[width_per_group * 32],
+                num_classes=cfg.MODEL.NUM_CLASSES,
+                pool_size=[[cfg.DATA.NUM_FRAMES // pool_size[0][0], 1, 1]],
+                resolution=[[cfg.DETECTION.ROI_XFORM_RESOLUTION] * 2],
+                scale_factor=[cfg.DETECTION.SPATIAL_SCALE_FACTOR],
+                dropout_rate=cfg.MODEL.DROPOUT_RATE,
+                act_func=cfg.MODEL.HEAD_ACT,
+                aligned=cfg.DETECTION.ALIGNED,
+                detach_final_fc=cfg.MODEL.DETACH_FINAL_FC,
+            )
+        else:
+            self.head = head_helper.RegionClassificationHead(
+                dim_in=[width_per_group * 32],
+                num_classes=cfg.MODEL.NUM_CLASSES,
+                pool_size=[None]
+                if cfg.MULTIGRID.SHORT_CYCLE
+                or cfg.MODEL.MODEL_NAME == "ContrastiveModel"
+                else [
+                    [
+                        cfg.DATA.NUM_FRAMES // pool_size[0][0],
+                        cfg.DATA.TRAIN_CROP_SIZE // 32 // pool_size[0][1],
+                        cfg.DATA.TRAIN_CROP_SIZE // 32 // pool_size[0][2],
+                    ]
+                ],  # None for AdaptiveAvgPool3d((1, 1, 1))
+                dropout_rate=cfg.MODEL.DROPOUT_RATE,
+                act_func=cfg.MODEL.HEAD_ACT,
+                detach_final_fc=cfg.MODEL.DETACH_FINAL_FC,
+                cfg=cfg,
+            )
 
     def region_pool_temporal_attention(self, x):
         batch_size, num_frames, num_regions, region_fv = x.shape[0], x.shape[1], x.shape[2], x.shape[3]
@@ -766,7 +840,7 @@ class ResNet(nn.Module):
         final_cls = torch.mean(final_cls, 1, True)
         final_cls = torch.squeeze(final_cls)
         return final_cls
-
+    
     def temporal_attention_region_attention(self, x):
         batch_size, num_frames, num_regions, region_fv = x.shape[0], x.shape[1], x.shape[2], x.shape[3]
 
@@ -805,79 +879,40 @@ class ResNet(nn.Module):
         x = self.region_pool(x)
         x = torch.squeeze(x)
         return x
+   
 
-
-        
-    def forward(self, x, bboxes): 
+    def forward(self, x, bboxes):
         x = x[:]  # avoid pass by reference
-        batch_size = x[0].shape[0]
-        if self.use_imagenet_resnet:
-            x = torch.squeeze(x[0])
-            #x = self.img_preprocess(x)
-            # x = self.resnet(x)
-            print(x.shape)
-            a, b, c, d, e = x.shape
-            x = torch.chunk(x, c, dim=2)
-            print(len(x))
-            print(x[0].shape)
-            #x = x.reshape(a * c, b, d, e)
-            '''
-            x = self.resnet.module.conv1(x)
-            x = self.resnet.module.bn1(x)
-            x = self.relu(x)
-            x = self.resnet.module.maxpool(x)
-            x = self.resnet.module.layer1(x)
-            x = self.resnet.module.layer2(x)
-            x = self.resnet.module.layer3(x)
-            x = self.resnet.module.layer4(x)
-            '''
-            '''
-            x = self.resnet.module.conv1(x)
-            x = self.resnet.module.maxpool(x)
-            x = self.resnet.module.modulator(self.resnet.module.stage2(x))
-            a, b, c, d = x.shape
-            print(x.shape)
-            x = x.reshape(a*4, 29, c, d)
-            x = x + self.resnet.module.local(x)
-            x = self.resnet.module.stage3(x)
-            x = self.resnet.module.stage4(x)
-            x = self.resnet.module.conv5(x)
-            x = x.mean([2, 3])
-            '''
-            y = []
-            for i in x:
-                x = torch.squeeze(i)
-                x = self.img_preprocess(x)
-                # x = self.resnet(x)
-                x = self.resnet.module.conv1(x)
-                x = self.resnet.module.bn1(x)
-                x = self.resnet.module.maxpool(x)
-                x = self.resnet.module.layer1(x)
-                x = self.resnet.module.layer2(x)
-                x = self.resnet.module.layer3(x)
-                #x = self.resnet.module.layer4(x)
-                x = torch.unsqueeze(x, 2)
-                print(x.shape)
-                y.append(x)
-            # output is of shape [64, 2048, 7, 7]
-            x = torch.cat(y, dim=2)
-            print("x shape", x.shape)
-            #x = torch.unsqueeze(x, 2)
-            x = [x]
 
+        x = self.s1(x)
+        x = self.s2(x)
+        y = []  # Don't modify x list in place due to activation checkpoint.
+        y = x
+        x = self.s3(y)
+        x = self.s4(x)
+
+        if self.use_s5:
+            x = self.s5(x)
 
         fmap_dim = x[0].shape[4]
         batch_size = x[0].shape[0]
-        print("x shape", x[0].shape)
         
+        if self.pool_video:
+            video_level_features = self.temporal_pool(x[0])
+            video_level_features = self.temporal_pool(video_level_features)
+            video_level_features = self.temporal_pool(video_level_features)
+            video_level_features = video_level_features.reshape((batch_size, -1))
+        else:
+            video_level_features = x[0].reshape(batch_size, -1)
+            
+        if self.use_region != True:
+            print(video_level_features.shape)
+            out = self.cls_head(video_level_features)
         # shape of z: (batch_size, num_frames, num_feature_maps, fmap_dim, fmap_dim)
-        z_shape = x[0].shape
         z = [x[0].permute((0, 2, 1, 3, 4))]
-        print("z shape", z[0].shape)
 
         # shape of bboxes: (16, 8, 14, 4, 2) ---> (batch_size, frames, regions, bounding box corners, coordinattes)
         batch_size = bboxes.shape[0]
-        print("bs", bboxes.shape)
         frames = bboxes.shape[1]
         regions = bboxes.shape[2]
         corners = bboxes.shape[3]
@@ -893,7 +928,6 @@ class ResNet(nn.Module):
                     scale_factor = 256 / fmap_dim
 
                     ### DEBUG ###
-                    # assert scale_factor == 36.5714285714
                     #############
 
                     x_min, y_min = x_min // scale_factor, y_min // scale_factor
@@ -903,75 +937,32 @@ class ResNet(nn.Module):
 
         formatted_bboxes = torch.Tensor(formatted_bboxes)
         formatted_bboxes = formatted_bboxes.to(device='cuda')
-        print("bbox size formatted", formatted_bboxes.shape)
+
         batch_size = z[0].shape[0]
         num_frames = z[0].shape[1]
         z = [z[0].reshape((batch_size*num_frames, z[0].shape[2], z[0].shape[3], z[0].shape[4]))]
-        print("Z", z[0].shape)
+        
         # feature maps size: (batch_size*frames*regions, num_feature_maps, fmap_dim, fmap_dim)
         feature_maps = roi_align(z[0], formatted_bboxes, self.roi_align_size)
         feature_maps = feature_maps.reshape((batch_size, frames, regions, -1))
-        print("Feature map size", feature_maps.shape)
-        
-        if self.image_variant == "video":
-            video_level_features = x[0].reshape((batch_size, frames, regions, -1))
-            print("yas", video_level_features.shape)
-            video_level_features = self.proj(video_level_features)
-            video_level_features = self.st_func["_".join(self.st_config)](video_level_features)
-            video_level_features = video_level_features.reshape((batch_size, -1))
-            x = torch.squeeze(video_level_features)
-            x = x.reshape((batch_size, -1))
-            print(x.shape)
-            out = self.image_mlp(x)
-            out = self.out_batchnorm(out)
-            out = self.act(out)
-            return out
-       
-        if self.image_variant == "region":
-            feature_maps = self.st_func["_".join(self.st_config)](feature_maps)
-            print(feature_maps.shape)
-            feature_maps = feature_maps.reshape((batch_size, -1))
-            out = self.image_mlp(feature_maps)
-            out = self.out_batchnorm(out)
-            out = self.act(out)
-            return out
-        
-        if self.image_variant == "video+region":
-            # final_cls = self.region_attention_temporal_pool(feature_maps)
-            print(x[0].shape)
-            #video_level_features = self.temporal_pool(x[0])
-            #video_level_features = self.temporal_pool(video_level_features)
-            #video_level_features = self.temporal_pool(video_level_features)
-            #print("pooled", video_level_features.shape)
-            video_level_features = x[0].reshape((batch_size, frames, regions, -1))
-            #video_level_features = torch.cat((video_level_features, feature_maps), dim=3)
-            print("concated", video_level_features.shape)
-            video_level_features = self.proj(video_level_features)
-            video_level_features = self.st_func["_".join(self.st_config)](video_level_features)
-            feature_maps = self.st_func["_".join(self.st_config)](feature_maps)
-            print(feature_maps.shape)
-            feature_maps = feature_maps.reshape((batch_size, -1))
-            video_level_features = feature_maps.reshape((batch_size, -1))
-            feature_maps = torch.cat((video_level_features, feature_maps), dim=1)
-            print(feature_maps.shape)
-            out = self.image_mlp(feature_maps)
-            out = self.out_batchnorm(out)
-            out = self.act(out)
-            
-            return out
 
-        if self.st_config is not None:
-            final_cls = self.st_func["_".join(self.st_config)](feature_maps)
+        if self.use_st:
+            out = self.st_func["_".join(self.st_config)](feature_maps)
             
-        
-
-        #################################### DEBUG ####################################
-        if torch.equal(final_cls[0], final_cls[1]) and torch.equal(final_cls[1], final_cls[2]) and torch.equal(final_cls[2], final_cls[3]):
-            # raise error 
-            1/0
-        ###############################################################################
- 
-        out = self.cls_head(final_cls)
+        if self.combine_features:
+            out = out.reshape(batch_size, -1)
+            out = torch.cat((out, video_level_features), dim=1)
+            print(out.shape)
+            out = self.cls_head(out)
+            
+        if self.region_only:
+            out = out.reshape(batch_size, -1)
+            print(out.shape)
+            out = self.cls_head(out)
+            
+        if self.use_vit:
+            feature_maps = self.vit_proj(feature_maps)
+            out = self.vit(feature_maps)
 
         if self.use_bn:
             out = self.out_batchnorm(out)
