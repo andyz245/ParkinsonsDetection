@@ -11,17 +11,13 @@ import torch
 import slowfast.utils.checkpoint as cu
 import slowfast.utils.distributed as du
 import slowfast.utils.logging as logging
-import slowfast.utils.metrics as metrics
 import slowfast.utils.misc as misc
 import slowfast.visualization.tensorboard_vis as tb
 from slowfast.datasets import loader
 from slowfast.models import build_model
 from slowfast.utils.env import pathmgr
 from slowfast.utils.meters import AVAMeter, TestMeter
-from sklearn.metrics import roc_auc_score
-import sklearn.metrics
 
-#from cam_framework import CamFramework 
 
 from pytorch_grad_cam import GradCAM, ScoreCAM, GradCAMPlusPlus, AblationCAM, XGradCAM, EigenCAM, FullGrad
 from pytorch_grad_cam.utils.model_targets import ClassifierOutputTarget
@@ -53,8 +49,8 @@ def perform_test(test_loader, model, test_meter, cfg, writer=None):
             to writer Tensorboard log.
     """
     # Enable eval mode.
-    #model.eval()
     model.eval()
+    # model.train()
 
     # model = CamFramework(model)
 
@@ -76,8 +72,6 @@ def perform_test(test_loader, model, test_meter, cfg, writer=None):
             video_idx = video_idx.cuda()
 
             print("bboxes: ", bboxes.shape)
-            #print("inputs: ", inputs.shape)
-            print("labels: ", labels.shape)
             bboxes = bboxes.cuda()
             for key, val in meta.items():
                 if isinstance(val, (list,)):
@@ -200,8 +194,7 @@ def perform_test(test_loader, model, test_meter, cfg, writer=None):
             # 1/0
 
             # 1/0
-        
-        
+
         # Gather all the predictions across all the devices to perform ensemble.
         if cfg.NUM_GPUS > 1:
             preds, labels, video_idx = du.all_gather(
@@ -326,45 +319,24 @@ def test(cfg):
         writer = tb.TensorboardWriter(cfg)
     else:
         writer = None
-    print(model)
-    
-    if cfg.MODEL.NUM_CLASSES == 2:
-        k = "top2_acc"
-    else:
-        k = "top5_acc"
+
     # # Perform multi-view test on the entire dataset.
     test_meter = perform_test(test_loader, model, test_meter, cfg, writer)
-    print(test_meter.video_preds[:, 1])
-    nk = metrics.topks_predictions(test_meter.video_preds, test_meter.video_labels, (1, 2))
-    #auroc_score = roc_auc_score(test_meter.video_labels, test_meter.video_preds[:, 1])
-    fpr, tpr, thresholds = sklearn.metrics.roc_curve(y_true = test_meter.video_labels, y_score = test_meter.video_preds[:, 1], pos_label = 1)
-    auroc_score = sklearn.metrics.auc(fpr, tpr)
-    f1 = sklearn.metrics.f1_score(y_true=test_meter.video_labels, y_pred=nk[0])
-    precision, recall, thresholds = sklearn.metrics.precision_recall_curve(test_meter.video_labels, test_meter.video_preds[:, 1])
-    auc_precision_recall = sklearn.metrics.auc(recall, precision)
-
     if writer is not None:
         writer.close()
     result_string = (
-        "_a{}{}{} Top1 Acc: {} Top5 Acc: {} MEM: {:.2f} dataset: {}{}, AUROC: {}, AUPRC: {}, F1: {}"
+        "_a{}{}{} Top1 Acc: {} Top5 Acc: {} MEM: {:.2f} dataset: {}{}"
         "".format(
             out_str_prefix,
             cfg.TEST.DATASET[0],
             test_meter.stats["top1_acc"],
             test_meter.stats["top1_acc"],
-            test_meter.stats[k],
+            test_meter.stats["top2_acc"],
             misc.gpu_mem_usage(),
             cfg.TEST.DATASET[0],
             cfg.MODEL.NUM_CLASSES,
-            auroc_score,
-            auc_precision_recall,
-            f1
         )
     )
     logger.info("testing done: {}".format(result_string))
-    
-    with open('./experiments/results.txt', 'a+') as f:
-        f.write(" Test accuracy: ")
-        f.write(result_string + "\n")
 
     return result_string
